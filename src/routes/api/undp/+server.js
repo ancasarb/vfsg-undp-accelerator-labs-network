@@ -5,7 +5,7 @@ export async function GET() {
             {
               "id": 3100,
               "energy_source": "Thermal",
-              "mapper": " Algeria",
+              "mapper": "Algeria",
               "region": "Regional Bureau for Arab States (RBAS)",
               "sdg1": 1,
               "sdg2": 6,
@@ -21,7 +21,7 @@ export async function GET() {
             {
               "id": 3177,
               "energy_source": "Wind",
-              "mapper": " Angola",
+              "mapper": "Angola",
               "region": "Regional Bureau for Africa (RBA)",
               "sdg1": 1,
               "sdg2": 7,
@@ -37,7 +37,7 @@ export async function GET() {
             {
               "id": 3176,
               "energy_source": "Hydro",
-              "mapper": " Angola",
+              "mapper": "Angola",
               "region": "Regional Bureau for Africa (RBA)",
               "sdg1": 10,
               "sdg2": 12,
@@ -53,7 +53,7 @@ export async function GET() {
             {
               "id": 2261,
               "energy_source": "Renewable general",
-              "mapper": " Angola",
+              "mapper": "Angola",
               "region": "Regional Bureau for Africa (RBA)",
               "sdg1": 1,
               "sdg2": 7,
@@ -69,7 +69,7 @@ export async function GET() {
             {
               "id": 3236,
               "energy_source": "Household application",
-              "mapper": " Angola",
+              "mapper": "Angola",
               "region": "Regional Bureau for Africa (RBA)",
               "sdg1": 7,
               "sdg2": 12,
@@ -85,7 +85,7 @@ export async function GET() {
             {
               "id": 3240,
               "energy_source": "Thermal",
-              "mapper": " Angola",
+              "mapper": "Angola",
               "region": "Regional Bureau for Africa (RBA)",
               "sdg1": 7,
               "sdg2": 13,
@@ -100,8 +100,8 @@ export async function GET() {
             },
             {
               "id": 4384,
-              "energy_source": "Solar ",
-              "mapper": " Argentina",
+              "energy_source": "Solar",
+              "mapper": "Argentina",
               "region": "Regional Bureau for Latin American Countries (RBLAC)",
               "sdg1": 7,
               "sdg2": 9,
@@ -117,7 +117,7 @@ export async function GET() {
             {
               "id": 4509,
               "energy_source": "Renewable general",
-              "mapper": " Argentina",
+              "mapper": "Argentina",
               "region": "Regional Bureau for Latin American Countries (RBLAC)",
               "sdg1": 7,
               "sdg2": 9,
@@ -133,7 +133,7 @@ export async function GET() {
             {
               "id": 4510,
               "energy_source": "Solar",
-              "mapper": " Argentina",
+              "mapper": "Argentina",
               "region": "Regional Bureau for Latin American Countries (RBLAC)",
               "sdg1": 7,
               "sdg2": 9,
@@ -149,7 +149,7 @@ export async function GET() {
             {
               "id": 4546,
               "energy_source": "Solar",
-              "mapper": " Argentina",
+              "mapper": "Argentina",
               "region": "Regional Bureau for Latin American Countries (RBLAC)",
               "sdg1": 7,
               "sdg2": 9,
@@ -165,7 +165,7 @@ export async function GET() {
             {
               "id": 4548,
               "energy_source": "Renewable general",
-              "mapper": " Argentina",
+              "mapper": "Argentina",
               "region": "Regional Bureau for Latin American Countries (RBLAC)",
               "sdg1": 7,
               "sdg2": 9,
@@ -181,7 +181,7 @@ export async function GET() {
             {
               "id": 4551,
               "energy_source": "Solar",
-              "mapper": " Argentina",
+              "mapper": "Argentina",
               "region": "Regional Bureau for Latin American Countries (RBLAC)",
               "sdg1": 7,
               "sdg2": 9,
@@ -196,8 +196,8 @@ export async function GET() {
             },
             {
               "id": 4552,
-              "energy_source": "Solar ",
-              "mapper": " Argentina",
+              "energy_source": "Solar",
+              "mapper": "Argentina",
               "region": "Regional Bureau for Latin American Countries (RBLAC)",
               "sdg1": 7,
               "sdg2": 9,
@@ -213,7 +213,7 @@ export async function GET() {
             {
               "id": 4553,
               "energy_source": "Solar",
-              "mapper": " Argentina",
+              "mapper": "Argentina",
               "region": "Regional Bureau for Latin American Countries (RBLAC)",
               "sdg1": 7,
               "sdg2": 9,
@@ -229,7 +229,7 @@ export async function GET() {
             {
               "id": 4559,
               "energy_source": "Household application",
-              "mapper": " Argentina",
+              "mapper": "Argentina",
               "region": "Regional Bureau for Latin American Countries (RBLAC)",
               "sdg1": 7,
               "sdg2": 9,
@@ -245,7 +245,7 @@ export async function GET() {
             {
               "id": 4562,
               "energy_source": "Household application",
-              "mapper": " Argentina",
+              "mapper": "Argentina",
               "region": "Regional Bureau for Latin American Countries (RBLAC)",
               "sdg1": 7,
               "sdg2": 9,
@@ -261,7 +261,7 @@ export async function GET() {
             {
               "id": 4589,
               "energy_source": "Wind",
-              "mapper": " Argentina",
+              "mapper": "Argentina",
               "region": "Regional Bureau for Latin American Countries (RBLAC)",
               "sdg1": 7,
               "sdg2": 9,
@@ -277,7 +277,7 @@ export async function GET() {
             {
               "id": 4590,
               "energy_source": "Solar",
-              "mapper": " Argentina",
+              "mapper": "Argentina",
               "region": "Regional Bureau for Latin American Countries (RBLAC)",
               "sdg1": 7,
               "sdg2": 9,
@@ -292,8 +292,8 @@ export async function GET() {
             },
             {
               "id": 4591,
-              "energy_source": "Solar ",
-              "mapper": " Argentina",
+              "energy_source": "Solar",
+              "mapper": "Argentina",
               "region": "Regional Bureau for Latin American Countries (RBLAC)",
               "sdg1": 7,
               "sdg2": 9,
@@ -309,7 +309,7 @@ export async function GET() {
             {
               "id": 4592,
               "energy_source": "Renewable general",
-              "mapper": " Argentina",
+              "mapper": "Argentina",
               "region": "Regional Bureau for Latin American Countries (RBLAC)",
               "sdg1": 7,
               "sdg2": 9,
@@ -325,7 +325,7 @@ export async function GET() {
             {
               "id": 4644,
               "energy_source": "Thermal",
-              "mapper": " Argentina",
+              "mapper": "Argentina",
               "region": "Regional Bureau for Latin American Countries (RBLAC)",
               "sdg1": 7,
               "sdg2": 9,
@@ -341,7 +341,7 @@ export async function GET() {
             {
               "id": 4645,
               "energy_source": "Solar",
-              "mapper": " Argentina",
+              "mapper": "Argentina",
               "region": "Regional Bureau for Latin American Countries (RBLAC)",
               "sdg1": 7,
               "sdg2": 9,
@@ -357,7 +357,7 @@ export async function GET() {
             {
               "id": 4646,
               "energy_source": "Wind",
-              "mapper": " Argentina",
+              "mapper": "Argentina",
               "region": "Regional Bureau for Latin American Countries (RBLAC)",
               "sdg1": 7,
               "sdg2": 9,
@@ -373,7 +373,7 @@ export async function GET() {
             {
               "id": 4742,
               "energy_source": "Household application",
-              "mapper": " Argentina",
+              "mapper": "Argentina",
               "region": "Regional Bureau for Latin American Countries (RBLAC)",
               "sdg1": 7,
               "sdg2": 10,
@@ -389,7 +389,7 @@ export async function GET() {
             {
               "id": 4766,
               "energy_source": "Household application",
-              "mapper": " Argentina",
+              "mapper": "Argentina",
               "region": "Regional Bureau for Latin American Countries (RBLAC)",
               "sdg1": 7,
               "sdg2": 9,
@@ -405,7 +405,7 @@ export async function GET() {
             {
               "id": 4769,
               "energy_source": "Thermal",
-              "mapper": " Argentina",
+              "mapper": "Argentina",
               "region": "Regional Bureau for Latin American Countries (RBLAC)",
               "sdg1": 7,
               "sdg2": 9,
@@ -421,7 +421,7 @@ export async function GET() {
             {
               "id": 4770,
               "energy_source": "Household application",
-              "mapper": " Argentina",
+              "mapper": "Argentina",
               "region": "Regional Bureau for Latin American Countries (RBLAC)",
               "sdg1": 7,
               "sdg2": 10,
@@ -437,7 +437,7 @@ export async function GET() {
             {
               "id": 4771,
               "energy_source": "Household application",
-              "mapper": " Argentina",
+              "mapper": "Argentina",
               "region": "Regional Bureau for Latin American Countries (RBLAC)",
               "sdg1": 7,
               "sdg2": 10,
@@ -453,7 +453,7 @@ export async function GET() {
             {
               "id": 4772,
               "energy_source": "Solar",
-              "mapper": " Argentina",
+              "mapper": "Argentina",
               "region": "Regional Bureau for Latin American Countries (RBLAC)",
               "sdg1": 5,
               "sdg2": 7,
@@ -469,7 +469,7 @@ export async function GET() {
             {
               "id": 4773,
               "energy_source": "Household application",
-              "mapper": " Argentina",
+              "mapper": "Argentina",
               "region": "Regional Bureau for Latin American Countries (RBLAC)",
               "sdg1": 7,
               "sdg2": 9,
@@ -485,7 +485,7 @@ export async function GET() {
             {
               "id": 4779,
               "energy_source": "Household application",
-              "mapper": " Argentina",
+              "mapper": "Argentina",
               "region": "Regional Bureau for Latin American Countries (RBLAC)",
               "sdg1": 7,
               "sdg2": 9,
@@ -501,7 +501,7 @@ export async function GET() {
             {
               "id": 4780,
               "energy_source": "Renewable general",
-              "mapper": " Argentina",
+              "mapper": "Argentina",
               "region": "Regional Bureau for Latin American Countries (RBLAC)",
               "sdg1": 4,
               "sdg2": 7,
@@ -517,7 +517,7 @@ export async function GET() {
             {
               "id": 5319,
               "energy_source": "Thermal",
-              "mapper": " Argentina",
+              "mapper": "Argentina",
               "region": "Regional Bureau for Latin American Countries (RBLAC)",
               "sdg1": 3,
               "sdg2": 7,
@@ -533,7 +533,7 @@ export async function GET() {
             {
               "id": 2314,
               "energy_source": "Hydro",
-              "mapper": " Azerbaijan",
+              "mapper": "Azerbaijan",
               "region": "Regional Bureau for Europe and the Commonwealth of Independent States (RBEC)",
               "sdg1": 6,
               "sdg2": 9,
@@ -549,7 +549,7 @@ export async function GET() {
             {
               "id": 4371,
               "energy_source": "Household application",
-              "mapper": " Bangladesh",
+              "mapper": "Bangladesh",
               "region": "Regional Bureau for Asia and Pacific (RBAP)",
               "sdg1": 3,
               "sdg2": 7,
@@ -565,7 +565,7 @@ export async function GET() {
             {
               "id": 4563,
               "energy_source": "Solar",
-              "mapper": " Bangladesh",
+              "mapper": "Bangladesh",
               "region": "Regional Bureau for Asia and Pacific (RBAP)",
               "sdg1": 7,
               "sdg2": 11,
@@ -581,7 +581,7 @@ export async function GET() {
             {
               "id": 4564,
               "energy_source": "Renewable general",
-              "mapper": " Bangladesh",
+              "mapper": "Bangladesh",
               "region": "Regional Bureau for Asia and Pacific (RBAP)",
               "sdg1": 7,
               "sdg2": 11,
@@ -597,7 +597,7 @@ export async function GET() {
             {
               "id": 4633,
               "energy_source": "Solar",
-              "mapper": " Bangladesh",
+              "mapper": "Bangladesh",
               "region": "Regional Bureau for Asia and Pacific (RBAP)",
               "sdg1": 7,
               "sdg2": 11,
@@ -613,7 +613,7 @@ export async function GET() {
             {
               "id": 4672,
               "energy_source": "Solar",
-              "mapper": " Bangladesh",
+              "mapper": "Bangladesh",
               "region": "Regional Bureau for Asia and Pacific (RBAP)",
               "sdg1": 6,
               "sdg2": 7,
@@ -629,7 +629,7 @@ export async function GET() {
             {
               "id": 4673,
               "energy_source": "Thermal",
-              "mapper": " Bangladesh",
+              "mapper": "Bangladesh",
               "region": "Regional Bureau for Asia and Pacific (RBAP)",
               "sdg1": 7,
               "sdg2": 11,
@@ -645,7 +645,7 @@ export async function GET() {
             {
               "id": 4674,
               "energy_source": "Household application",
-              "mapper": " Bangladesh",
+              "mapper": "Bangladesh",
               "region": "Regional Bureau for Asia and Pacific (RBAP)",
               "sdg1": null,
               "sdg2": null,
@@ -661,7 +661,7 @@ export async function GET() {
             {
               "id": 4675,
               "energy_source": "Solar",
-              "mapper": " Bangladesh",
+              "mapper": "Bangladesh",
               "region": "Regional Bureau for Asia and Pacific (RBAP)",
               "sdg1": 1,
               "sdg2": 2,
@@ -677,7 +677,7 @@ export async function GET() {
             {
               "id": 4688,
               "energy_source": "Solar",
-              "mapper": " Bangladesh",
+              "mapper": "Bangladesh",
               "region": "Regional Bureau for Asia and Pacific (RBAP)",
               "sdg1": 7,
               "sdg2": 9,
@@ -693,7 +693,7 @@ export async function GET() {
             {
               "id": 4777,
               "energy_source": "Solar",
-              "mapper": " Bangladesh",
+              "mapper": "Bangladesh",
               "region": "Regional Bureau for Asia and Pacific (RBAP)",
               "sdg1": null,
               "sdg2": null,
@@ -709,7 +709,7 @@ export async function GET() {
             {
               "id": 5299,
               "energy_source": "Solar",
-              "mapper": " Barbados",
+              "mapper": "Barbados",
               "region": "Regional Bureau for Latin American Countries (RBLAC)",
               "sdg1": 7,
               "sdg2": null,
@@ -725,7 +725,7 @@ export async function GET() {
             {
               "id": 5305,
               "energy_source": "Thermal",
-              "mapper": " Barbados",
+              "mapper": "Barbados",
               "region": "Regional Bureau for Latin American Countries (RBLAC)",
               "sdg1": null,
               "sdg2": null,
@@ -741,7 +741,7 @@ export async function GET() {
             {
               "id": 2993,
               "energy_source": "Solar",
-              "mapper": " Barbados",
+              "mapper": "Barbados",
               "region": "Regional Bureau for Latin American Countries (RBLAC)",
               "sdg1": 7,
               "sdg2": null,
@@ -757,7 +757,7 @@ export async function GET() {
             {
               "id": 3160,
               "energy_source": "Solar",
-              "mapper": " Barbados",
+              "mapper": "Barbados",
               "region": "Regional Bureau for Latin American Countries (RBLAC)",
               "sdg1": 7,
               "sdg2": 12,
@@ -773,7 +773,7 @@ export async function GET() {
             {
               "id": 1560,
               "energy_source": "Thermal",
-              "mapper": " Barbados",
+              "mapper": "Barbados",
               "region": "Regional Bureau for Latin American Countries (RBLAC)",
               "sdg1": 7,
               "sdg2": 14,
@@ -789,7 +789,7 @@ export async function GET() {
             {
               "id": 3029,
               "energy_source": "Hydro",
-              "mapper": " Barbados",
+              "mapper": "Barbados",
               "region": "Regional Bureau for Latin American Countries (RBLAC)",
               "sdg1": 6,
               "sdg2": 9,
@@ -805,7 +805,7 @@ export async function GET() {
             {
               "id": 4748,
               "energy_source": "Renewable general",
-              "mapper": " Burkina Faso",
+              "mapper": "Burkina Faso",
               "region": "Regional Bureau for Africa (RBA)",
               "sdg1": 2,
               "sdg2": 7,
@@ -821,7 +821,7 @@ export async function GET() {
             {
               "id": 4749,
               "energy_source": "Renewable general",
-              "mapper": " Burkina Faso",
+              "mapper": "Burkina Faso",
               "region": "Regional Bureau for Africa (RBA)",
               "sdg1": null,
               "sdg2": null,
@@ -837,7 +837,7 @@ export async function GET() {
             {
               "id": 4751,
               "energy_source": "Solar",
-              "mapper": " Burkina Faso",
+              "mapper": "Burkina Faso",
               "region": "Regional Bureau for Africa (RBA)",
               "sdg1": 1,
               "sdg2": 2,
@@ -853,7 +853,7 @@ export async function GET() {
             {
               "id": 4753,
               "energy_source": "Solar",
-              "mapper": " Burkina Faso",
+              "mapper": "Burkina Faso",
               "region": "Regional Bureau for Africa (RBA)",
               "sdg1": null,
               "sdg2": null,
@@ -869,7 +869,7 @@ export async function GET() {
             {
               "id": 4932,
               "energy_source": "Solar",
-              "mapper": " Burkina Faso",
+              "mapper": "Burkina Faso",
               "region": "Regional Bureau for Africa (RBA)",
               "sdg1": null,
               "sdg2": null,
@@ -885,7 +885,7 @@ export async function GET() {
             {
               "id": 4944,
               "energy_source": "Solar",
-              "mapper": " Burkina Faso",
+              "mapper": "Burkina Faso",
               "region": "Regional Bureau for Africa (RBA)",
               "sdg1": 2,
               "sdg2": 3,
@@ -901,7 +901,7 @@ export async function GET() {
             {
               "id": 5111,
               "energy_source": "Solar",
-              "mapper": " Burkina Faso",
+              "mapper": "Burkina Faso",
               "region": "Regional Bureau for Africa (RBA)",
               "sdg1": 2,
               "sdg2": 7,
@@ -917,7 +917,7 @@ export async function GET() {
             {
               "id": 5112,
               "energy_source": "Renewable general",
-              "mapper": " Burkina Faso",
+              "mapper": "Burkina Faso",
               "region": "Regional Bureau for Africa (RBA)",
               "sdg1": null,
               "sdg2": null,
@@ -932,8 +932,8 @@ export async function GET() {
             },
             {
               "id": 5113,
-              "energy_source": "Solar ",
-              "mapper": " Burkina Faso",
+              "energy_source": "Solar",
+              "mapper": "Burkina Faso",
               "region": "Regional Bureau for Africa (RBA)",
               "sdg1": 7,
               "sdg2": 10,
@@ -949,7 +949,7 @@ export async function GET() {
             {
               "id": 5151,
               "energy_source": "Thermal",
-              "mapper": " Burkina Faso",
+              "mapper": "Burkina Faso",
               "region": "Regional Bureau for Africa (RBA)",
               "sdg1": 3,
               "sdg2": 7,
@@ -965,7 +965,7 @@ export async function GET() {
             {
               "id": 5156,
               "energy_source": "Solar",
-              "mapper": " Burkina Faso",
+              "mapper": "Burkina Faso",
               "region": "Regional Bureau for Africa (RBA)",
               "sdg1": 7,
               "sdg2": 9,
@@ -981,7 +981,7 @@ export async function GET() {
             {
               "id": 5159,
               "energy_source": "Thermal",
-              "mapper": " Burkina Faso",
+              "mapper": "Burkina Faso",
               "region": "Regional Bureau for Africa (RBA)",
               "sdg1": 7,
               "sdg2": 8,
@@ -997,7 +997,7 @@ export async function GET() {
             {
               "id": 5161,
               "energy_source": "Household application",
-              "mapper": " Burkina Faso",
+              "mapper": "Burkina Faso",
               "region": "Regional Bureau for Africa (RBA)",
               "sdg1": 1,
               "sdg2": 5,
@@ -1013,7 +1013,7 @@ export async function GET() {
             {
               "id": 1747,
               "energy_source": "Household application",
-              "mapper": " Burkina Faso",
+              "mapper": "Burkina Faso",
               "region": "Regional Bureau for Africa (RBA)",
               "sdg1": 5,
               "sdg2": 7,
@@ -1029,7 +1029,7 @@ export async function GET() {
             {
               "id": 1822,
               "energy_source": "Thermal",
-              "mapper": " Cambodia",
+              "mapper": "Cambodia",
               "region": "Regional Bureau for Asia and Pacific (RBAP)",
               "sdg1": 1,
               "sdg2": 7,
@@ -1045,7 +1045,7 @@ export async function GET() {
             {
               "id": 5037,
               "energy_source": "Household application",
-              "mapper": " Cameroon",
+              "mapper": "Cameroon",
               "region": "Regional Bureau for Africa (RBA)",
               "sdg1": 7,
               "sdg2": 9,
@@ -1061,7 +1061,7 @@ export async function GET() {
             {
               "id": 5040,
               "energy_source": "Household application",
-              "mapper": " Cameroon",
+              "mapper": "Cameroon",
               "region": "Regional Bureau for Africa (RBA)",
               "sdg1": 7,
               "sdg2": 9,
@@ -1077,7 +1077,7 @@ export async function GET() {
             {
               "id": 5041,
               "energy_source": "Renewable general",
-              "mapper": " Cameroon",
+              "mapper": "Cameroon",
               "region": "Regional Bureau for Africa (RBA)",
               "sdg1": 7,
               "sdg2": 9,
@@ -1092,8 +1092,8 @@ export async function GET() {
             },
             {
               "id": 5042,
-              "energy_source": "Solar ",
-              "mapper": " Cameroon",
+              "energy_source": "Solar",
+              "mapper": "Cameroon",
               "region": "Regional Bureau for Africa (RBA)",
               "sdg1": 7,
               "sdg2": 12,
@@ -1109,7 +1109,7 @@ export async function GET() {
             {
               "id": 5051,
               "energy_source": "Thermal",
-              "mapper": " Cameroon",
+              "mapper": "Cameroon",
               "region": "Regional Bureau for Africa (RBA)",
               "sdg1": 2,
               "sdg2": 7,
@@ -1124,8 +1124,8 @@ export async function GET() {
             },
             {
               "id": 5120,
-              "energy_source": "Solar ",
-              "mapper": " Cameroon",
+              "energy_source": "Solar",
+              "mapper": "Cameroon",
               "region": "Regional Bureau for Africa (RBA)",
               "sdg1": 2,
               "sdg2": 7,
@@ -1141,7 +1141,7 @@ export async function GET() {
             {
               "id": 5122,
               "energy_source": "Thermal",
-              "mapper": " Cameroon",
+              "mapper": "Cameroon",
               "region": "Regional Bureau for Africa (RBA)",
               "sdg1": 3,
               "sdg2": 5,
@@ -1157,7 +1157,7 @@ export async function GET() {
             {
               "id": 5142,
               "energy_source": "Household application",
-              "mapper": " Cameroon",
+              "mapper": "Cameroon",
               "region": "Regional Bureau for Africa (RBA)",
               "sdg1": 7,
               "sdg2": 12,
@@ -1173,7 +1173,7 @@ export async function GET() {
             {
               "id": 5147,
               "energy_source": "Household application",
-              "mapper": " Cameroon",
+              "mapper": "Cameroon",
               "region": "Regional Bureau for Africa (RBA)",
               "sdg1": null,
               "sdg2": null,
@@ -1189,7 +1189,7 @@ export async function GET() {
             {
               "id": 5160,
               "energy_source": "Household application",
-              "mapper": " Cameroon",
+              "mapper": "Cameroon",
               "region": "Regional Bureau for Africa (RBA)",
               "sdg1": 7,
               "sdg2": 9,
@@ -1205,7 +1205,7 @@ export async function GET() {
             {
               "id": 2849,
               "energy_source": "Thermal",
-              "mapper": " Cameroon",
+              "mapper": "Cameroon",
               "region": "Regional Bureau for Africa (RBA)",
               "sdg1": 7,
               "sdg2": 12,
@@ -1221,7 +1221,7 @@ export async function GET() {
             {
               "id": 2848,
               "energy_source": "Thermal",
-              "mapper": " Cameroon",
+              "mapper": "Cameroon",
               "region": "Regional Bureau for Africa (RBA)",
               "sdg1": 3,
               "sdg2": 7,
@@ -1237,7 +1237,7 @@ export async function GET() {
             {
               "id": 2847,
               "energy_source": "Solar",
-              "mapper": " Cameroon",
+              "mapper": "Cameroon",
               "region": "Regional Bureau for Africa (RBA)",
               "sdg1": 2,
               "sdg2": 3,
@@ -1253,7 +1253,7 @@ export async function GET() {
             {
               "id": 2739,
               "energy_source": "Solar",
-              "mapper": " Colombia",
+              "mapper": "Colombia",
               "region": "Regional Bureau for Latin American Countries (RBLAC)",
               "sdg1": 7,
               "sdg2": null,
@@ -1269,7 +1269,7 @@ export async function GET() {
             {
               "id": 2703,
               "energy_source": "Thermal",
-              "mapper": " Colombia",
+              "mapper": "Colombia",
               "region": "Regional Bureau for Latin American Countries (RBLAC)",
               "sdg1": 9,
               "sdg2": null,
@@ -1285,7 +1285,7 @@ export async function GET() {
             {
               "id": 22,
               "energy_source": "Household application",
-              "mapper": " Congo",
+              "mapper": "Congo",
               "region": "Regional Bureau for Africa (RBA)",
               "sdg1": 7,
               "sdg2": null,
@@ -1301,7 +1301,7 @@ export async function GET() {
             {
               "id": 19,
               "energy_source": "Thermal",
-              "mapper": " Congo",
+              "mapper": "Congo",
               "region": "Regional Bureau for Africa (RBA)",
               "sdg1": 7,
               "sdg2": null,
@@ -1317,7 +1317,7 @@ export async function GET() {
             {
               "id": 21,
               "energy_source": "Thermal",
-              "mapper": " Congo",
+              "mapper": "Congo",
               "region": "Regional Bureau for Africa (RBA)",
               "sdg1": 7,
               "sdg2": null,
@@ -1333,7 +1333,7 @@ export async function GET() {
             {
               "id": 23,
               "energy_source": "Household application",
-              "mapper": " Congo",
+              "mapper": "Congo",
               "region": "Regional Bureau for Africa (RBA)",
               "sdg1": 7,
               "sdg2": null,
@@ -1349,7 +1349,7 @@ export async function GET() {
             {
               "id": 20,
               "energy_source": "Thermal",
-              "mapper": " Congo",
+              "mapper": "Congo",
               "region": "Regional Bureau for Africa (RBA)",
               "sdg1": 7,
               "sdg2": null,
@@ -1365,7 +1365,7 @@ export async function GET() {
             {
               "id": 4654,
               "energy_source": "Household application",
-              "mapper": " Ecuador",
+              "mapper": "Ecuador",
               "region": "Regional Bureau for Latin American Countries (RBLAC)",
               "sdg1": 7,
               "sdg2": null,
@@ -1381,7 +1381,7 @@ export async function GET() {
             {
               "id": 4660,
               "energy_source": "Household application",
-              "mapper": " Ecuador",
+              "mapper": "Ecuador",
               "region": "Regional Bureau for Latin American Countries (RBLAC)",
               "sdg1": null,
               "sdg2": null,
@@ -1397,7 +1397,7 @@ export async function GET() {
             {
               "id": 4662,
               "energy_source": "Household application",
-              "mapper": " Ecuador",
+              "mapper": "Ecuador",
               "region": "Regional Bureau for Latin American Countries (RBLAC)",
               "sdg1": 7,
               "sdg2": 13,
@@ -1413,7 +1413,7 @@ export async function GET() {
             {
               "id": 4664,
               "energy_source": "Household application",
-              "mapper": " Ecuador",
+              "mapper": "Ecuador",
               "region": "Regional Bureau for Latin American Countries (RBLAC)",
               "sdg1": 7,
               "sdg2": null,
@@ -1429,7 +1429,7 @@ export async function GET() {
             {
               "id": 4694,
               "energy_source": "Solar",
-              "mapper": " Ecuador",
+              "mapper": "Ecuador",
               "region": "Regional Bureau for Latin American Countries (RBLAC)",
               "sdg1": 7,
               "sdg2": null,
@@ -1445,7 +1445,7 @@ export async function GET() {
             {
               "id": 4765,
               "energy_source": "Thermal",
-              "mapper": " Ecuador",
+              "mapper": "Ecuador",
               "region": "Regional Bureau for Latin American Countries (RBLAC)",
               "sdg1": 6,
               "sdg2": 7,
@@ -1461,7 +1461,7 @@ export async function GET() {
             {
               "id": 4767,
               "energy_source": "Renewable general",
-              "mapper": " Ecuador",
+              "mapper": "Ecuador",
               "region": "Regional Bureau for Latin American Countries (RBLAC)",
               "sdg1": null,
               "sdg2": null,
@@ -1477,7 +1477,7 @@ export async function GET() {
             {
               "id": 4811,
               "energy_source": "Hydro",
-              "mapper": " Ecuador",
+              "mapper": "Ecuador",
               "region": "Regional Bureau for Latin American Countries (RBLAC)",
               "sdg1": null,
               "sdg2": null,
@@ -1493,7 +1493,7 @@ export async function GET() {
             {
               "id": 4816,
               "energy_source": "Household application",
-              "mapper": " Ecuador",
+              "mapper": "Ecuador",
               "region": "Regional Bureau for Latin American Countries (RBLAC)",
               "sdg1": 7,
               "sdg2": 12,
@@ -1508,8 +1508,8 @@ export async function GET() {
             },
             {
               "id": 4950,
-              "energy_source": "Solar ",
-              "mapper": " Ecuador",
+              "energy_source": "Solar",
+              "mapper": "Ecuador",
               "region": "Regional Bureau for Latin American Countries (RBLAC)",
               "sdg1": 7,
               "sdg2": 11,
@@ -1525,7 +1525,7 @@ export async function GET() {
             {
               "id": 4951,
               "energy_source": "Renewable general",
-              "mapper": " Ecuador",
+              "mapper": "Ecuador",
               "region": "Regional Bureau for Latin American Countries (RBLAC)",
               "sdg1": 7,
               "sdg2": 12,
@@ -1541,7 +1541,7 @@ export async function GET() {
             {
               "id": 4952,
               "energy_source": "Household application",
-              "mapper": " Ecuador",
+              "mapper": "Ecuador",
               "region": "Regional Bureau for Latin American Countries (RBLAC)",
               "sdg1": 7,
               "sdg2": 12,
@@ -1557,7 +1557,7 @@ export async function GET() {
             {
               "id": 5026,
               "energy_source": "Household application",
-              "mapper": " Ecuador",
+              "mapper": "Ecuador",
               "region": "Regional Bureau for Latin American Countries (RBLAC)",
               "sdg1": null,
               "sdg2": null,
@@ -1573,7 +1573,7 @@ export async function GET() {
             {
               "id": 5027,
               "energy_source": "Thermal",
-              "mapper": " Ecuador",
+              "mapper": "Ecuador",
               "region": "Regional Bureau for Latin American Countries (RBLAC)",
               "sdg1": null,
               "sdg2": null,
@@ -1589,7 +1589,7 @@ export async function GET() {
             {
               "id": 5028,
               "energy_source": "Household application",
-              "mapper": " Ecuador",
+              "mapper": "Ecuador",
               "region": "Regional Bureau for Latin American Countries (RBLAC)",
               "sdg1": 7,
               "sdg2": 11,
@@ -1605,7 +1605,7 @@ export async function GET() {
             {
               "id": 5179,
               "energy_source": "Solar",
-              "mapper": " Ecuador",
+              "mapper": "Ecuador",
               "region": "Regional Bureau for Latin American Countries (RBLAC)",
               "sdg1": null,
               "sdg2": null,
@@ -1621,7 +1621,7 @@ export async function GET() {
             {
               "id": 474,
               "energy_source": "Thermal",
-              "mapper": " Ecuador",
+              "mapper": "Ecuador",
               "region": "Regional Bureau for Latin American Countries (RBLAC)",
               "sdg1": 1,
               "sdg2": 10,
@@ -1637,7 +1637,7 @@ export async function GET() {
             {
               "id": 781,
               "energy_source": "Solar",
-              "mapper": " Ecuador",
+              "mapper": "Ecuador",
               "region": "Regional Bureau for Latin American Countries (RBLAC)",
               "sdg1": 7,
               "sdg2": 10,
@@ -1653,7 +1653,7 @@ export async function GET() {
             {
               "id": 776,
               "energy_source": "Solar",
-              "mapper": " Ecuador",
+              "mapper": "Ecuador",
               "region": "Regional Bureau for Latin American Countries (RBLAC)",
               "sdg1": 10,
               "sdg2": 11,
@@ -1669,7 +1669,7 @@ export async function GET() {
             {
               "id": 990,
               "energy_source": "Thermal",
-              "mapper": " Ecuador",
+              "mapper": "Ecuador",
               "region": "Regional Bureau for Latin American Countries (RBLAC)",
               "sdg1": 13,
               "sdg2": null,
@@ -1685,7 +1685,7 @@ export async function GET() {
             {
               "id": 4353,
               "energy_source": "Chemical",
-              "mapper": " Egypt",
+              "mapper": "Egypt",
               "region": "Regional Bureau for Arab States (RBAS)",
               "sdg1": 7,
               "sdg2": 12,
@@ -1701,7 +1701,7 @@ export async function GET() {
             {
               "id": 4354,
               "energy_source": "Solar",
-              "mapper": " Egypt",
+              "mapper": "Egypt",
               "region": "Regional Bureau for Arab States (RBAS)",
               "sdg1": 7,
               "sdg2": null,
@@ -1717,7 +1717,7 @@ export async function GET() {
             {
               "id": 4355,
               "energy_source": "Solar",
-              "mapper": " Egypt",
+              "mapper": "Egypt",
               "region": "Regional Bureau for Arab States (RBAS)",
               "sdg1": 6,
               "sdg2": 7,
@@ -1733,7 +1733,7 @@ export async function GET() {
             {
               "id": 4385,
               "energy_source": "Solar",
-              "mapper": " Egypt",
+              "mapper": "Egypt",
               "region": "Regional Bureau for Arab States (RBAS)",
               "sdg1": 7,
               "sdg2": null,
@@ -1749,7 +1749,7 @@ export async function GET() {
             {
               "id": 4511,
               "energy_source": "Renewable general",
-              "mapper": " Egypt",
+              "mapper": "Egypt",
               "region": "Regional Bureau for Arab States (RBAS)",
               "sdg1": 4,
               "sdg2": 7,
@@ -1765,7 +1765,7 @@ export async function GET() {
             {
               "id": 4593,
               "energy_source": "Solar",
-              "mapper": " Egypt",
+              "mapper": "Egypt",
               "region": "Regional Bureau for Arab States (RBAS)",
               "sdg1": null,
               "sdg2": null,
@@ -1781,7 +1781,7 @@ export async function GET() {
             {
               "id": 1780,
               "energy_source": "Household application",
-              "mapper": " Egypt",
+              "mapper": "Egypt",
               "region": "Regional Bureau for Arab States (RBAS)",
               "sdg1": 7,
               "sdg2": 12,
@@ -1797,7 +1797,7 @@ export async function GET() {
             {
               "id": 4734,
               "energy_source": "Thermal",
-              "mapper": " Eswatini",
+              "mapper": "Eswatini",
               "region": "Regional Bureau for Africa (RBA)",
               "sdg1": null,
               "sdg2": null,
@@ -1813,7 +1813,7 @@ export async function GET() {
             {
               "id": 4743,
               "energy_source": "Renewable general",
-              "mapper": " Eswatini",
+              "mapper": "Eswatini",
               "region": "Regional Bureau for Africa (RBA)",
               "sdg1": 7,
               "sdg2": 11,
@@ -1829,7 +1829,7 @@ export async function GET() {
             {
               "id": 3472,
               "energy_source": "Household application",
-              "mapper": " Eswatini",
+              "mapper": "Eswatini",
               "region": "Regional Bureau for Africa (RBA)",
               "sdg1": 3,
               "sdg2": 7,
@@ -1845,7 +1845,7 @@ export async function GET() {
             {
               "id": 4331,
               "energy_source": "Renewable general",
-              "mapper": " Ethiopia",
+              "mapper": "Ethiopia",
               "region": "Regional Bureau for Africa (RBA)",
               "sdg1": null,
               "sdg2": null,
@@ -1861,7 +1861,7 @@ export async function GET() {
             {
               "id": 4332,
               "energy_source": "Solar",
-              "mapper": " Ethiopia",
+              "mapper": "Ethiopia",
               "region": "Regional Bureau for Africa (RBA)",
               "sdg1": 7,
               "sdg2": null,
@@ -1877,7 +1877,7 @@ export async function GET() {
             {
               "id": 4346,
               "energy_source": "Solar",
-              "mapper": " Ethiopia",
+              "mapper": "Ethiopia",
               "region": "Regional Bureau for Africa (RBA)",
               "sdg1": 2,
               "sdg2": 7,
@@ -1893,7 +1893,7 @@ export async function GET() {
             {
               "id": 4352,
               "energy_source": "Household application",
-              "mapper": " Ethiopia",
+              "mapper": "Ethiopia",
               "region": "Regional Bureau for Africa (RBA)",
               "sdg1": 3,
               "sdg2": 5,
@@ -1909,7 +1909,7 @@ export async function GET() {
             {
               "id": 4356,
               "energy_source": "Household application",
-              "mapper": " Ethiopia",
+              "mapper": "Ethiopia",
               "region": "Regional Bureau for Africa (RBA)",
               "sdg1": 3,
               "sdg2": 7,
@@ -1925,7 +1925,7 @@ export async function GET() {
             {
               "id": 4358,
               "energy_source": "Thermal",
-              "mapper": " Ethiopia",
+              "mapper": "Ethiopia",
               "region": "Regional Bureau for Africa (RBA)",
               "sdg1": 3,
               "sdg2": 7,
@@ -1941,7 +1941,7 @@ export async function GET() {
             {
               "id": 4359,
               "energy_source": "Household application",
-              "mapper": " Ethiopia",
+              "mapper": "Ethiopia",
               "region": "Regional Bureau for Africa (RBA)",
               "sdg1": 3,
               "sdg2": 7,
@@ -1957,7 +1957,7 @@ export async function GET() {
             {
               "id": 4360,
               "energy_source": "Household application",
-              "mapper": " Ethiopia",
+              "mapper": "Ethiopia",
               "region": "Regional Bureau for Africa (RBA)",
               "sdg1": 3,
               "sdg2": 7,
@@ -1973,7 +1973,7 @@ export async function GET() {
             {
               "id": 4361,
               "energy_source": "Household application",
-              "mapper": " Ethiopia",
+              "mapper": "Ethiopia",
               "region": "Regional Bureau for Africa (RBA)",
               "sdg1": 7,
               "sdg2": 13,
@@ -1989,7 +1989,7 @@ export async function GET() {
             {
               "id": 4362,
               "energy_source": "Thermal",
-              "mapper": " Ethiopia",
+              "mapper": "Ethiopia",
               "region": "Regional Bureau for Africa (RBA)",
               "sdg1": 7,
               "sdg2": 13,
@@ -2005,7 +2005,7 @@ export async function GET() {
             {
               "id": 4363,
               "energy_source": "Solar",
-              "mapper": " Ethiopia",
+              "mapper": "Ethiopia",
               "region": "Regional Bureau for Africa (RBA)",
               "sdg1": 7,
               "sdg2": 11,
@@ -2021,7 +2021,7 @@ export async function GET() {
             {
               "id": 4364,
               "energy_source": "Household application",
-              "mapper": " Ethiopia",
+              "mapper": "Ethiopia",
               "region": "Regional Bureau for Africa (RBA)",
               "sdg1": 3,
               "sdg2": 7,
@@ -2037,7 +2037,7 @@ export async function GET() {
             {
               "id": 4366,
               "energy_source": "Wind",
-              "mapper": " Ethiopia",
+              "mapper": "Ethiopia",
               "region": "Regional Bureau for Africa (RBA)",
               "sdg1": null,
               "sdg2": null,
@@ -2053,7 +2053,7 @@ export async function GET() {
             {
               "id": 3121,
               "energy_source": "Thermal",
-              "mapper": " Ethiopia",
+              "mapper": "Ethiopia",
               "region": "Regional Bureau for Africa (RBA)",
               "sdg1": 11,
               "sdg2": null,
@@ -2069,7 +2069,7 @@ export async function GET() {
             {
               "id": 1554,
               "energy_source": "Chemical",
-              "mapper": " Ghana",
+              "mapper": "Ghana",
               "region": "Regional Bureau for Africa (RBA)",
               "sdg1": 7,
               "sdg2": 9,
@@ -2085,7 +2085,7 @@ export async function GET() {
             {
               "id": 4934,
               "energy_source": "Mechanical",
-              "mapper": " Guatemala",
+              "mapper": "Guatemala",
               "region": "Regional Bureau for Latin American Countries (RBLAC)",
               "sdg1": 7,
               "sdg2": null,
@@ -2101,7 +2101,7 @@ export async function GET() {
             {
               "id": 4971,
               "energy_source": "Renewable general",
-              "mapper": " Guatemala",
+              "mapper": "Guatemala",
               "region": "Regional Bureau for Latin American Countries (RBLAC)",
               "sdg1": 5,
               "sdg2": 7,
@@ -2116,8 +2116,8 @@ export async function GET() {
             },
             {
               "id": 4972,
-              "energy_source": "",
-              "mapper": " Guatemala",
+              "energy_source": "N/A",
+              "mapper": "Guatemala",
               "region": "Regional Bureau for Latin American Countries (RBLAC)",
               "sdg1": 7,
               "sdg2": 11,
@@ -2132,8 +2132,8 @@ export async function GET() {
             },
             {
               "id": 4973,
-              "energy_source": "",
-              "mapper": " Guatemala",
+              "energy_source": "N/A",
+              "mapper": "Guatemala",
               "region": "Regional Bureau for Latin American Countries (RBLAC)",
               "sdg1": 7,
               "sdg2": 11,
@@ -2148,8 +2148,8 @@ export async function GET() {
             },
             {
               "id": 4974,
-              "energy_source": "",
-              "mapper": " Guatemala",
+              "energy_source": "N/A",
+              "mapper": "Guatemala",
               "region": "Regional Bureau for Latin American Countries (RBLAC)",
               "sdg1": 7,
               "sdg2": 12,
@@ -2165,7 +2165,7 @@ export async function GET() {
             {
               "id": 4975,
               "energy_source": "Solar",
-              "mapper": " Guatemala",
+              "mapper": "Guatemala",
               "region": "Regional Bureau for Latin American Countries (RBLAC)",
               "sdg1": null,
               "sdg2": null,
@@ -2181,7 +2181,7 @@ export async function GET() {
             {
               "id": 4976,
               "energy_source": "Solar",
-              "mapper": " Guatemala",
+              "mapper": "Guatemala",
               "region": "Regional Bureau for Latin American Countries (RBLAC)",
               "sdg1": 7,
               "sdg2": 10,
@@ -2196,8 +2196,8 @@ export async function GET() {
             },
             {
               "id": 4977,
-              "energy_source": "",
-              "mapper": " Guatemala",
+              "energy_source": "N/A",
+              "mapper": "Guatemala",
               "region": "Regional Bureau for Latin American Countries (RBLAC)",
               "sdg1": 7,
               "sdg2": 11,
@@ -2212,8 +2212,8 @@ export async function GET() {
             },
             {
               "id": 4978,
-              "energy_source": "Solar ",
-              "mapper": " Guatemala",
+              "energy_source": "Solar",
+              "mapper": "Guatemala",
               "region": "Regional Bureau for Latin American Countries (RBLAC)",
               "sdg1": 7,
               "sdg2": 11,
@@ -2229,7 +2229,7 @@ export async function GET() {
             {
               "id": 4017,
               "energy_source": "Renewable general",
-              "mapper": " Guatemala",
+              "mapper": "Guatemala",
               "region": "Regional Bureau for Latin American Countries (RBLAC)",
               "sdg1": 3,
               "sdg2": 7,
@@ -2245,7 +2245,7 @@ export async function GET() {
             {
               "id": 4011,
               "energy_source": "Household application",
-              "mapper": " Guatemala",
+              "mapper": "Guatemala",
               "region": "Regional Bureau for Latin American Countries (RBLAC)",
               "sdg1": 3,
               "sdg2": 7,
@@ -2261,7 +2261,7 @@ export async function GET() {
             {
               "id": 4014,
               "energy_source": "Solar",
-              "mapper": " Guatemala",
+              "mapper": "Guatemala",
               "region": "Regional Bureau for Latin American Countries (RBLAC)",
               "sdg1": 7,
               "sdg2": 11,
@@ -2277,7 +2277,7 @@ export async function GET() {
             {
               "id": 4012,
               "energy_source": "Renewable general",
-              "mapper": " Guatemala",
+              "mapper": "Guatemala",
               "region": "Regional Bureau for Latin American Countries (RBLAC)",
               "sdg1": 3,
               "sdg2": 7,
@@ -2293,7 +2293,7 @@ export async function GET() {
             {
               "id": 4013,
               "energy_source": "Thermal",
-              "mapper": " Guatemala",
+              "mapper": "Guatemala",
               "region": "Regional Bureau for Latin American Countries (RBLAC)",
               "sdg1": 3,
               "sdg2": 12,
@@ -2309,7 +2309,7 @@ export async function GET() {
             {
               "id": 5019,
               "energy_source": "Renewable general",
-              "mapper": " Guinea",
+              "mapper": "Guinea",
               "region": "Regional Bureau for Africa (RBA)",
               "sdg1": 7,
               "sdg2": 8,
@@ -2325,7 +2325,7 @@ export async function GET() {
             {
               "id": 5020,
               "energy_source": "Household application",
-              "mapper": " Guinea",
+              "mapper": "Guinea",
               "region": "Regional Bureau for Africa (RBA)",
               "sdg1": 7,
               "sdg2": 9,
@@ -2341,7 +2341,7 @@ export async function GET() {
             {
               "id": 5154,
               "energy_source": "Household application",
-              "mapper": " Guinea",
+              "mapper": "Guinea",
               "region": "Regional Bureau for Africa (RBA)",
               "sdg1": 1,
               "sdg2": 11,
@@ -2357,7 +2357,7 @@ export async function GET() {
             {
               "id": 5162,
               "energy_source": "Household application",
-              "mapper": " Guinea",
+              "mapper": "Guinea",
               "region": "Regional Bureau for Africa (RBA)",
               "sdg1": 9,
               "sdg2": 11,
@@ -2373,7 +2373,7 @@ export async function GET() {
             {
               "id": 5164,
               "energy_source": "Household application",
-              "mapper": " Guinea",
+              "mapper": "Guinea",
               "region": "Regional Bureau for Africa (RBA)",
               "sdg1": 4,
               "sdg2": 9,
@@ -2389,7 +2389,7 @@ export async function GET() {
             {
               "id": 5374,
               "energy_source": "Renewable general",
-              "mapper": " Guinea",
+              "mapper": "Guinea",
               "region": "Regional Bureau for Africa (RBA)",
               "sdg1": 7,
               "sdg2": 11,
@@ -2405,7 +2405,7 @@ export async function GET() {
             {
               "id": 5375,
               "energy_source": "Household application",
-              "mapper": " Guinea",
+              "mapper": "Guinea",
               "region": "Regional Bureau for Africa (RBA)",
               "sdg1": 7,
               "sdg2": 11,
@@ -2421,7 +2421,7 @@ export async function GET() {
             {
               "id": 5376,
               "energy_source": "Household application",
-              "mapper": " Guinea",
+              "mapper": "Guinea",
               "region": "Regional Bureau for Africa (RBA)",
               "sdg1": 7,
               "sdg2": 11,
@@ -2437,7 +2437,7 @@ export async function GET() {
             {
               "id": 5377,
               "energy_source": "Hydro",
-              "mapper": " Guinea",
+              "mapper": "Guinea",
               "region": "Regional Bureau for Africa (RBA)",
               "sdg1": 7,
               "sdg2": 11,
@@ -2453,7 +2453,7 @@ export async function GET() {
             {
               "id": 2535,
               "energy_source": "Renewable general",
-              "mapper": " Guinea",
+              "mapper": "Guinea",
               "region": "Regional Bureau for Africa (RBA)",
               "sdg1": 4,
               "sdg2": 9,
@@ -2469,7 +2469,7 @@ export async function GET() {
             {
               "id": 76,
               "energy_source": "Renewable general",
-              "mapper": " India",
+              "mapper": "India",
               "region": "Regional Bureau for Asia and Pacific (RBAP)",
               "sdg1": 11,
               "sdg2": 13,
@@ -2485,7 +2485,7 @@ export async function GET() {
             {
               "id": 152,
               "energy_source": "Thermal",
-              "mapper": " India",
+              "mapper": "India",
               "region": "Regional Bureau for Asia and Pacific (RBAP)",
               "sdg1": 7,
               "sdg2": 13,
@@ -2501,7 +2501,7 @@ export async function GET() {
             {
               "id": 151,
               "energy_source": "Renewable general",
-              "mapper": " India",
+              "mapper": "India",
               "region": "Regional Bureau for Asia and Pacific (RBAP)",
               "sdg1": 11,
               "sdg2": null,
@@ -2517,7 +2517,7 @@ export async function GET() {
             {
               "id": 149,
               "energy_source": "Renewable general",
-              "mapper": " India",
+              "mapper": "India",
               "region": "Regional Bureau for Asia and Pacific (RBAP)",
               "sdg1": 7,
               "sdg2": null,
@@ -2533,7 +2533,7 @@ export async function GET() {
             {
               "id": 163,
               "energy_source": "Renewable general",
-              "mapper": " India",
+              "mapper": "India",
               "region": "Regional Bureau for Asia and Pacific (RBAP)",
               "sdg1": 7,
               "sdg2": null,
@@ -2549,7 +2549,7 @@ export async function GET() {
             {
               "id": 150,
               "energy_source": "Renewable general",
-              "mapper": " India",
+              "mapper": "India",
               "region": "Regional Bureau for Asia and Pacific (RBAP)",
               "sdg1": 7,
               "sdg2": null,
@@ -2565,7 +2565,7 @@ export async function GET() {
             {
               "id": 1784,
               "energy_source": "Non-renewable",
-              "mapper": " Indonesia",
+              "mapper": "Indonesia",
               "region": "Regional Bureau for Asia and Pacific (RBAP)",
               "sdg1": 2,
               "sdg2": 3,
@@ -2581,7 +2581,7 @@ export async function GET() {
             {
               "id": 795,
               "energy_source": "Renewable general",
-              "mapper": " Iraq",
+              "mapper": "Iraq",
               "region": "Regional Bureau for Arab States (RBAS)",
               "sdg1": 9,
               "sdg2": 13,
@@ -2597,7 +2597,7 @@ export async function GET() {
             {
               "id": 1595,
               "energy_source": "Renewable general",
-              "mapper": " Iraq",
+              "mapper": "Iraq",
               "region": "Regional Bureau for Arab States (RBAS)",
               "sdg1": 9,
               "sdg2": 11,
@@ -2613,7 +2613,7 @@ export async function GET() {
             {
               "id": 3829,
               "energy_source": "Solar",
-              "mapper": " Jordan",
+              "mapper": "Jordan",
               "region": "Regional Bureau for Arab States (RBAS)",
               "sdg1": 3,
               "sdg2": 7,
@@ -2629,7 +2629,7 @@ export async function GET() {
             {
               "id": 1112,
               "energy_source": "Hydro",
-              "mapper": " Kenya",
+              "mapper": "Kenya",
               "region": "Regional Bureau for Africa (RBA)",
               "sdg1": 1,
               "sdg2": 9,
@@ -2645,7 +2645,7 @@ export async function GET() {
             {
               "id": 3414,
               "energy_source": "Thermal",
-              "mapper": " Kenya",
+              "mapper": "Kenya",
               "region": "Regional Bureau for Africa (RBA)",
               "sdg1": 7,
               "sdg2": 8,
@@ -2661,7 +2661,7 @@ export async function GET() {
             {
               "id": 2507,
               "energy_source": "Household application",
-              "mapper": " Kyrgyzstan",
+              "mapper": "Kyrgyzstan",
               "region": "Regional Bureau for Europe and the Commonwealth of Independent States (RBEC)",
               "sdg1": 7,
               "sdg2": 9,
@@ -2677,7 +2677,7 @@ export async function GET() {
             {
               "id": 2510,
               "energy_source": "Household application",
-              "mapper": " Kyrgyzstan",
+              "mapper": "Kyrgyzstan",
               "region": "Regional Bureau for Europe and the Commonwealth of Independent States (RBEC)",
               "sdg1": 1,
               "sdg2": 2,
@@ -2693,7 +2693,7 @@ export async function GET() {
             {
               "id": 3369,
               "energy_source": "Thermal",
-              "mapper": " Lao",
+              "mapper": "Lao",
               "region": "Regional Bureau for Asia and Pacific (RBAP)",
               "sdg1": 3,
               "sdg2": 9,
@@ -2709,7 +2709,7 @@ export async function GET() {
             {
               "id": 2359,
               "energy_source": "Thermal",
-              "mapper": " Lao",
+              "mapper": "Lao",
               "region": "Regional Bureau for Asia and Pacific (RBAP)",
               "sdg1": 13,
               "sdg2": 15,
@@ -2725,7 +2725,7 @@ export async function GET() {
             {
               "id": 1648,
               "energy_source": "Renewable general",
-              "mapper": " Lesotho",
+              "mapper": "Lesotho",
               "region": "Regional Bureau for Africa (RBA)",
               "sdg1": 9,
               "sdg2": 11,
@@ -2741,7 +2741,7 @@ export async function GET() {
             {
               "id": 4834,
               "energy_source": "Renewable general",
-              "mapper": " Malawi",
+              "mapper": "Malawi",
               "region": "Regional Bureau for Africa (RBA)",
               "sdg1": 7,
               "sdg2": null,
@@ -2757,7 +2757,7 @@ export async function GET() {
             {
               "id": 4921,
               "energy_source": "Hydro",
-              "mapper": " Malawi",
+              "mapper": "Malawi",
               "region": "Regional Bureau for Africa (RBA)",
               "sdg1": 7,
               "sdg2": null,
@@ -2773,7 +2773,7 @@ export async function GET() {
             {
               "id": 4926,
               "energy_source": "Hydro",
-              "mapper": " Malawi",
+              "mapper": "Malawi",
               "region": "Regional Bureau for Africa (RBA)",
               "sdg1": 6,
               "sdg2": 7,
@@ -2789,7 +2789,7 @@ export async function GET() {
             {
               "id": 4927,
               "energy_source": "Household application",
-              "mapper": " Malawi",
+              "mapper": "Malawi",
               "region": "Regional Bureau for Africa (RBA)",
               "sdg1": 7,
               "sdg2": null,
@@ -2805,7 +2805,7 @@ export async function GET() {
             {
               "id": 4928,
               "energy_source": "Household application",
-              "mapper": " Malawi",
+              "mapper": "Malawi",
               "region": "Regional Bureau for Africa (RBA)",
               "sdg1": 4,
               "sdg2": 7,
@@ -2821,7 +2821,7 @@ export async function GET() {
             {
               "id": 1756,
               "energy_source": "Wind",
-              "mapper": " Malawi",
+              "mapper": "Malawi",
               "region": "Regional Bureau for Africa (RBA)",
               "sdg1": 7,
               "sdg2": null,
@@ -2837,7 +2837,7 @@ export async function GET() {
             {
               "id": 1758,
               "energy_source": "Household application",
-              "mapper": " Malawi",
+              "mapper": "Malawi",
               "region": "Regional Bureau for Africa (RBA)",
               "sdg1": 7,
               "sdg2": 12,
@@ -2853,7 +2853,7 @@ export async function GET() {
             {
               "id": 2080,
               "energy_source": "Household application",
-              "mapper": " Malaysia",
+              "mapper": "Malaysia",
               "region": "Regional Bureau for Asia and Pacific (RBAP)",
               "sdg1": 7,
               "sdg2": 9,
@@ -2869,7 +2869,7 @@ export async function GET() {
             {
               "id": 140,
               "energy_source": "Hydro",
-              "mapper": " Malaysia",
+              "mapper": "Malaysia",
               "region": "Regional Bureau for Asia and Pacific (RBAP)",
               "sdg1": 7,
               "sdg2": 9,
@@ -2885,7 +2885,7 @@ export async function GET() {
             {
               "id": 2099,
               "energy_source": "Solar",
-              "mapper": " Malaysia",
+              "mapper": "Malaysia",
               "region": "Regional Bureau for Asia and Pacific (RBAP)",
               "sdg1": 7,
               "sdg2": 10,
@@ -2901,7 +2901,7 @@ export async function GET() {
             {
               "id": 2136,
               "energy_source": "Thermal",
-              "mapper": " Malaysia",
+              "mapper": "Malaysia",
               "region": "Regional Bureau for Asia and Pacific (RBAP)",
               "sdg1": 12,
               "sdg2": 13,
@@ -2917,7 +2917,7 @@ export async function GET() {
             {
               "id": 2119,
               "energy_source": "Solar",
-              "mapper": " Malaysia",
+              "mapper": "Malaysia",
               "region": "Regional Bureau for Asia and Pacific (RBAP)",
               "sdg1": 7,
               "sdg2": 9,
@@ -2933,7 +2933,7 @@ export async function GET() {
             {
               "id": 2118,
               "energy_source": "Thermal",
-              "mapper": " Malaysia",
+              "mapper": "Malaysia",
               "region": "Regional Bureau for Asia and Pacific (RBAP)",
               "sdg1": 7,
               "sdg2": 9,
@@ -2949,7 +2949,7 @@ export async function GET() {
             {
               "id": 139,
               "energy_source": "Solar",
-              "mapper": " Malaysia",
+              "mapper": "Malaysia",
               "region": "Regional Bureau for Asia and Pacific (RBAP)",
               "sdg1": 7,
               "sdg2": 9,
@@ -2965,7 +2965,7 @@ export async function GET() {
             {
               "id": 2143,
               "energy_source": "Hydro",
-              "mapper": " Malaysia",
+              "mapper": "Malaysia",
               "region": "Regional Bureau for Asia and Pacific (RBAP)",
               "sdg1": 6,
               "sdg2": 7,
@@ -2981,7 +2981,7 @@ export async function GET() {
             {
               "id": 2769,
               "energy_source": "Renewable general",
-              "mapper": " Malaysia",
+              "mapper": "Malaysia",
               "region": "Regional Bureau for Asia and Pacific (RBAP)",
               "sdg1": 1,
               "sdg2": 2,
@@ -2997,7 +2997,7 @@ export async function GET() {
             {
               "id": 2100,
               "energy_source": "Solar",
-              "mapper": " Malaysia",
+              "mapper": "Malaysia",
               "region": "Regional Bureau for Asia and Pacific (RBAP)",
               "sdg1": 7,
               "sdg2": 10,
@@ -3013,7 +3013,7 @@ export async function GET() {
             {
               "id": 2177,
               "energy_source": "Solar",
-              "mapper": " Malaysia",
+              "mapper": "Malaysia",
               "region": "Regional Bureau for Asia and Pacific (RBAP)",
               "sdg1": 3,
               "sdg2": 7,
@@ -3029,7 +3029,7 @@ export async function GET() {
             {
               "id": 146,
               "energy_source": "Thermal",
-              "mapper": " Malaysia",
+              "mapper": "Malaysia",
               "region": "Regional Bureau for Asia and Pacific (RBAP)",
               "sdg1": 7,
               "sdg2": 9,
@@ -3045,7 +3045,7 @@ export async function GET() {
             {
               "id": 2103,
               "energy_source": "Solar",
-              "mapper": " Malaysia",
+              "mapper": "Malaysia",
               "region": "Regional Bureau for Asia and Pacific (RBAP)",
               "sdg1": 2,
               "sdg2": 7,
@@ -3061,7 +3061,7 @@ export async function GET() {
             {
               "id": 31,
               "energy_source": "Thermal",
-              "mapper": " Mali",
+              "mapper": "Mali",
               "region": "Regional Bureau for Africa (RBA)",
               "sdg1": 12,
               "sdg2": null,
@@ -3077,7 +3077,7 @@ export async function GET() {
             {
               "id": 4374,
               "energy_source": "Renewable general",
-              "mapper": " Mexico",
+              "mapper": "Mexico",
               "region": "Regional Bureau for Latin American Countries (RBLAC)",
               "sdg1": 5,
               "sdg2": 7,
@@ -3093,7 +3093,7 @@ export async function GET() {
             {
               "id": 4377,
               "energy_source": "Thermal",
-              "mapper": " Mexico",
+              "mapper": "Mexico",
               "region": "Regional Bureau for Latin American Countries (RBLAC)",
               "sdg1": null,
               "sdg2": null,
@@ -3109,7 +3109,7 @@ export async function GET() {
             {
               "id": 4537,
               "energy_source": "Thermal",
-              "mapper": " Mexico",
+              "mapper": "Mexico",
               "region": "Regional Bureau for Latin American Countries (RBLAC)",
               "sdg1": 6,
               "sdg2": 7,
@@ -3125,7 +3125,7 @@ export async function GET() {
             {
               "id": 4630,
               "energy_source": "Mechanical",
-              "mapper": " Mexico",
+              "mapper": "Mexico",
               "region": "Regional Bureau for Latin American Countries (RBLAC)",
               "sdg1": 7,
               "sdg2": 12,
@@ -3141,7 +3141,7 @@ export async function GET() {
             {
               "id": 4697,
               "energy_source": "Chemical",
-              "mapper": " Mexico",
+              "mapper": "Mexico",
               "region": "Regional Bureau for Latin American Countries (RBLAC)",
               "sdg1": 7,
               "sdg2": 9,
@@ -3157,7 +3157,7 @@ export async function GET() {
             {
               "id": 2674,
               "energy_source": "Solar",
-              "mapper": " Mexico",
+              "mapper": "Mexico",
               "region": "Regional Bureau for Latin American Countries (RBLAC)",
               "sdg1": 7,
               "sdg2": 11,
@@ -3173,7 +3173,7 @@ export async function GET() {
             {
               "id": 1086,
               "energy_source": "Household application",
-              "mapper": " Morocco",
+              "mapper": "Morocco",
               "region": "Regional Bureau for Arab States (RBAS)",
               "sdg1": 7,
               "sdg2": 10,
@@ -3189,7 +3189,7 @@ export async function GET() {
             {
               "id": 1606,
               "energy_source": "Solar",
-              "mapper": " Niger",
+              "mapper": "Niger",
               "region": "Regional Bureau for Africa (RBA)",
               "sdg1": 2,
               "sdg2": 3,
@@ -3205,7 +3205,7 @@ export async function GET() {
             {
               "id": 3458,
               "energy_source": "Thermal",
-              "mapper": " Niger",
+              "mapper": "Niger",
               "region": "Regional Bureau for Africa (RBA)",
               "sdg1": 1,
               "sdg2": 3,
@@ -3221,7 +3221,7 @@ export async function GET() {
             {
               "id": 3423,
               "energy_source": "Household application",
-              "mapper": " Niger",
+              "mapper": "Niger",
               "region": "Regional Bureau for Africa (RBA)",
               "sdg1": 7,
               "sdg2": 12,
@@ -3237,7 +3237,7 @@ export async function GET() {
             {
               "id": 4627,
               "energy_source": "Thermal",
-              "mapper": " North Macedonia",
+              "mapper": "North Macedonia",
               "region": "Regional Bureau for Europe and the Commonwealth of Independent States (RBEC)",
               "sdg1": null,
               "sdg2": null,
@@ -3253,7 +3253,7 @@ export async function GET() {
             {
               "id": 3854,
               "energy_source": "Renewable general",
-              "mapper": " North Macedonia",
+              "mapper": "North Macedonia",
               "region": "Regional Bureau for Europe and the Commonwealth of Independent States (RBEC)",
               "sdg1": 11,
               "sdg2": 13,
@@ -3269,7 +3269,7 @@ export async function GET() {
             {
               "id": 4651,
               "energy_source": "Household application",
-              "mapper": " Pacific",
+              "mapper": "Pacific",
               "region": "Regional Bureau for Asia and Pacific (RBAP)",
               "sdg1": 2,
               "sdg2": 7,
@@ -3285,7 +3285,7 @@ export async function GET() {
             {
               "id": 4661,
               "energy_source": "Household application",
-              "mapper": " Pacific",
+              "mapper": "Pacific",
               "region": "Regional Bureau for Asia and Pacific (RBAP)",
               "sdg1": 2,
               "sdg2": 3,
@@ -3301,7 +3301,7 @@ export async function GET() {
             {
               "id": 4665,
               "energy_source": "Solar",
-              "mapper": " Pacific",
+              "mapper": "Pacific",
               "region": "Regional Bureau for Asia and Pacific (RBAP)",
               "sdg1": 7,
               "sdg2": 9,
@@ -3317,7 +3317,7 @@ export async function GET() {
             {
               "id": 4666,
               "energy_source": "Solar",
-              "mapper": " Pacific",
+              "mapper": "Pacific",
               "region": "Regional Bureau for Asia and Pacific (RBAP)",
               "sdg1": null,
               "sdg2": null,
@@ -3333,7 +3333,7 @@ export async function GET() {
             {
               "id": 4667,
               "energy_source": "Solar",
-              "mapper": " Pacific",
+              "mapper": "Pacific",
               "region": "Regional Bureau for Asia and Pacific (RBAP)",
               "sdg1": 7,
               "sdg2": 9,
@@ -3349,7 +3349,7 @@ export async function GET() {
             {
               "id": 4668,
               "energy_source": "Solar",
-              "mapper": " Pacific",
+              "mapper": "Pacific",
               "region": "Regional Bureau for Asia and Pacific (RBAP)",
               "sdg1": 7,
               "sdg2": 11,
@@ -3365,7 +3365,7 @@ export async function GET() {
             {
               "id": 4669,
               "energy_source": "Solar",
-              "mapper": " Pacific",
+              "mapper": "Pacific",
               "region": "Regional Bureau for Asia and Pacific (RBAP)",
               "sdg1": 9,
               "sdg2": 11,
@@ -3381,7 +3381,7 @@ export async function GET() {
             {
               "id": 4670,
               "energy_source": "Solar",
-              "mapper": " Pacific",
+              "mapper": "Pacific",
               "region": "Regional Bureau for Asia and Pacific (RBAP)",
               "sdg1": 6,
               "sdg2": 7,
@@ -3397,7 +3397,7 @@ export async function GET() {
             {
               "id": 4671,
               "energy_source": "Solar",
-              "mapper": " Pacific",
+              "mapper": "Pacific",
               "region": "Regional Bureau for Asia and Pacific (RBAP)",
               "sdg1": 7,
               "sdg2": 11,
@@ -3413,7 +3413,7 @@ export async function GET() {
             {
               "id": 4677,
               "energy_source": "Solar",
-              "mapper": " Pacific",
+              "mapper": "Pacific",
               "region": "Regional Bureau for Asia and Pacific (RBAP)",
               "sdg1": 7,
               "sdg2": 11,
@@ -3429,7 +3429,7 @@ export async function GET() {
             {
               "id": 4678,
               "energy_source": "Solar",
-              "mapper": " Pacific",
+              "mapper": "Pacific",
               "region": "Regional Bureau for Asia and Pacific (RBAP)",
               "sdg1": 7,
               "sdg2": 11,
@@ -3445,7 +3445,7 @@ export async function GET() {
             {
               "id": 4679,
               "energy_source": "Solar",
-              "mapper": " Pacific",
+              "mapper": "Pacific",
               "region": "Regional Bureau for Asia and Pacific (RBAP)",
               "sdg1": 7,
               "sdg2": 11,
@@ -3460,8 +3460,8 @@ export async function GET() {
             },
             {
               "id": 4680,
-              "energy_source": "Solar ",
-              "mapper": " Pacific",
+              "energy_source": "Solar",
+              "mapper": "Pacific",
               "region": "Regional Bureau for Asia and Pacific (RBAP)",
               "sdg1": 7,
               "sdg2": 11,
@@ -3476,8 +3476,8 @@ export async function GET() {
             },
             {
               "id": 4681,
-              "energy_source": "Solar ",
-              "mapper": " Pacific",
+              "energy_source": "Solar",
+              "mapper": "Pacific",
               "region": "Regional Bureau for Asia and Pacific (RBAP)",
               "sdg1": null,
               "sdg2": null,
@@ -3493,7 +3493,7 @@ export async function GET() {
             {
               "id": 4682,
               "energy_source": "Household application",
-              "mapper": " Pacific",
+              "mapper": "Pacific",
               "region": "Regional Bureau for Asia and Pacific (RBAP)",
               "sdg1": 7,
               "sdg2": 9,
@@ -3509,7 +3509,7 @@ export async function GET() {
             {
               "id": 4683,
               "energy_source": "Household application",
-              "mapper": " Pacific",
+              "mapper": "Pacific",
               "region": "Regional Bureau for Asia and Pacific (RBAP)",
               "sdg1": 2,
               "sdg2": 7,
@@ -3525,7 +3525,7 @@ export async function GET() {
             {
               "id": 4685,
               "energy_source": "Household application",
-              "mapper": " Pacific",
+              "mapper": "Pacific",
               "region": "Regional Bureau for Asia and Pacific (RBAP)",
               "sdg1": null,
               "sdg2": null,
@@ -3541,7 +3541,7 @@ export async function GET() {
             {
               "id": 4686,
               "energy_source": "Household application",
-              "mapper": " Pacific",
+              "mapper": "Pacific",
               "region": "Regional Bureau for Asia and Pacific (RBAP)",
               "sdg1": 2,
               "sdg2": 7,
@@ -3557,7 +3557,7 @@ export async function GET() {
             {
               "id": 4687,
               "energy_source": "Solar",
-              "mapper": " Pacific",
+              "mapper": "Pacific",
               "region": "Regional Bureau for Asia and Pacific (RBAP)",
               "sdg1": 7,
               "sdg2": 9,
@@ -3573,7 +3573,7 @@ export async function GET() {
             {
               "id": 3832,
               "energy_source": "Solar",
-              "mapper": " Pacific",
+              "mapper": "Pacific",
               "region": "Regional Bureau for Asia and Pacific (RBAP)",
               "sdg1": 7,
               "sdg2": 13,
@@ -3589,7 +3589,7 @@ export async function GET() {
             {
               "id": 4066,
               "energy_source": "Solar",
-              "mapper": " Pacific",
+              "mapper": "Pacific",
               "region": "Regional Bureau for Asia and Pacific (RBAP)",
               "sdg1": 3,
               "sdg2": 11,
@@ -3605,7 +3605,7 @@ export async function GET() {
             {
               "id": 3924,
               "energy_source": "Thermal",
-              "mapper": " Pacific",
+              "mapper": "Pacific",
               "region": "Regional Bureau for Asia and Pacific (RBAP)",
               "sdg1": 7,
               "sdg2": 9,
@@ -3621,7 +3621,7 @@ export async function GET() {
             {
               "id": 4784,
               "energy_source": "Household application",
-              "mapper": " Panama",
+              "mapper": "Panama",
               "region": "Regional Bureau for Latin American Countries (RBLAC)",
               "sdg1": 6,
               "sdg2": 7,
@@ -3637,7 +3637,7 @@ export async function GET() {
             {
               "id": 4785,
               "energy_source": "Solar",
-              "mapper": " Panama",
+              "mapper": "Panama",
               "region": "Regional Bureau for Latin American Countries (RBLAC)",
               "sdg1": 7,
               "sdg2": null,
@@ -3653,7 +3653,7 @@ export async function GET() {
             {
               "id": 4818,
               "energy_source": "Thermal",
-              "mapper": " Panama",
+              "mapper": "Panama",
               "region": "Regional Bureau for Latin American Countries (RBLAC)",
               "sdg1": 7,
               "sdg2": null,
@@ -3669,7 +3669,7 @@ export async function GET() {
             {
               "id": 4819,
               "energy_source": "Thermal",
-              "mapper": " Panama",
+              "mapper": "Panama",
               "region": "Regional Bureau for Latin American Countries (RBLAC)",
               "sdg1": 7,
               "sdg2": null,
@@ -3685,7 +3685,7 @@ export async function GET() {
             {
               "id": 4820,
               "energy_source": "Thermal",
-              "mapper": " Panama",
+              "mapper": "Panama",
               "region": "Regional Bureau for Latin American Countries (RBLAC)",
               "sdg1": 7,
               "sdg2": null,
@@ -3701,7 +3701,7 @@ export async function GET() {
             {
               "id": 4821,
               "energy_source": "Thermal",
-              "mapper": " Panama",
+              "mapper": "Panama",
               "region": "Regional Bureau for Latin American Countries (RBLAC)",
               "sdg1": null,
               "sdg2": null,
@@ -3717,7 +3717,7 @@ export async function GET() {
             {
               "id": 4822,
               "energy_source": "Thermal",
-              "mapper": " Panama",
+              "mapper": "Panama",
               "region": "Regional Bureau for Latin American Countries (RBLAC)",
               "sdg1": 7,
               "sdg2": null,
@@ -3733,7 +3733,7 @@ export async function GET() {
             {
               "id": 4823,
               "energy_source": "Thermal",
-              "mapper": " Panama",
+              "mapper": "Panama",
               "region": "Regional Bureau for Latin American Countries (RBLAC)",
               "sdg1": 7,
               "sdg2": null,
@@ -3749,7 +3749,7 @@ export async function GET() {
             {
               "id": 4824,
               "energy_source": "Thermal",
-              "mapper": " Panama",
+              "mapper": "Panama",
               "region": "Regional Bureau for Latin American Countries (RBLAC)",
               "sdg1": 7,
               "sdg2": null,
@@ -3765,7 +3765,7 @@ export async function GET() {
             {
               "id": 4825,
               "energy_source": "Thermal",
-              "mapper": " Panama",
+              "mapper": "Panama",
               "region": "Regional Bureau for Latin American Countries (RBLAC)",
               "sdg1": 7,
               "sdg2": null,
@@ -3781,7 +3781,7 @@ export async function GET() {
             {
               "id": 4826,
               "energy_source": "Solar",
-              "mapper": " Panama",
+              "mapper": "Panama",
               "region": "Regional Bureau for Latin American Countries (RBLAC)",
               "sdg1": null,
               "sdg2": null,
@@ -3797,7 +3797,7 @@ export async function GET() {
             {
               "id": 4827,
               "energy_source": "Thermal",
-              "mapper": " Panama",
+              "mapper": "Panama",
               "region": "Regional Bureau for Latin American Countries (RBLAC)",
               "sdg1": 7,
               "sdg2": null,
@@ -3813,7 +3813,7 @@ export async function GET() {
             {
               "id": 4828,
               "energy_source": "Thermal",
-              "mapper": " Panama",
+              "mapper": "Panama",
               "region": "Regional Bureau for Latin American Countries (RBLAC)",
               "sdg1": null,
               "sdg2": null,
@@ -3829,7 +3829,7 @@ export async function GET() {
             {
               "id": 4829,
               "energy_source": "Thermal",
-              "mapper": " Panama",
+              "mapper": "Panama",
               "region": "Regional Bureau for Latin American Countries (RBLAC)",
               "sdg1": 7,
               "sdg2": null,
@@ -3845,7 +3845,7 @@ export async function GET() {
             {
               "id": 4835,
               "energy_source": "Mechanical",
-              "mapper": " Panama",
+              "mapper": "Panama",
               "region": "Regional Bureau for Latin American Countries (RBLAC)",
               "sdg1": 1,
               "sdg2": 3,
@@ -3861,7 +3861,7 @@ export async function GET() {
             {
               "id": 4837,
               "energy_source": "Household application",
-              "mapper": " Panama",
+              "mapper": "Panama",
               "region": "Regional Bureau for Latin American Countries (RBLAC)",
               "sdg1": 2,
               "sdg2": 3,
@@ -3876,8 +3876,8 @@ export async function GET() {
             },
             {
               "id": 4838,
-              "energy_source": "Solar ",
-              "mapper": " Panama",
+              "energy_source": "Solar",
+              "mapper": "Panama",
               "region": "Regional Bureau for Latin American Countries (RBLAC)",
               "sdg1": 7,
               "sdg2": null,
@@ -3893,7 +3893,7 @@ export async function GET() {
             {
               "id": 4839,
               "energy_source": "Solar",
-              "mapper": " Panama",
+              "mapper": "Panama",
               "region": "Regional Bureau for Latin American Countries (RBLAC)",
               "sdg1": 7,
               "sdg2": 8,
@@ -3909,7 +3909,7 @@ export async function GET() {
             {
               "id": 4899,
               "energy_source": "Renewable general",
-              "mapper": " Panama",
+              "mapper": "Panama",
               "region": "Regional Bureau for Latin American Countries (RBLAC)",
               "sdg1": 1,
               "sdg2": 7,
@@ -3925,7 +3925,7 @@ export async function GET() {
             {
               "id": 4900,
               "energy_source": "Solar",
-              "mapper": " Panama",
+              "mapper": "Panama",
               "region": "Regional Bureau for Latin American Countries (RBLAC)",
               "sdg1": 7,
               "sdg2": null,
@@ -3941,7 +3941,7 @@ export async function GET() {
             {
               "id": 4901,
               "energy_source": "Hydro",
-              "mapper": " Panama",
+              "mapper": "Panama",
               "region": "Regional Bureau for Latin American Countries (RBLAC)",
               "sdg1": 7,
               "sdg2": null,
@@ -3957,7 +3957,7 @@ export async function GET() {
             {
               "id": 4902,
               "energy_source": "Solar",
-              "mapper": " Panama",
+              "mapper": "Panama",
               "region": "Regional Bureau for Latin American Countries (RBLAC)",
               "sdg1": 7,
               "sdg2": null,
@@ -3973,7 +3973,7 @@ export async function GET() {
             {
               "id": 4904,
               "energy_source": "Renewable general",
-              "mapper": " Panama",
+              "mapper": "Panama",
               "region": "Regional Bureau for Latin American Countries (RBLAC)",
               "sdg1": 4,
               "sdg2": 7,
@@ -3989,7 +3989,7 @@ export async function GET() {
             {
               "id": 4905,
               "energy_source": "Solar",
-              "mapper": " Panama",
+              "mapper": "Panama",
               "region": "Regional Bureau for Latin American Countries (RBLAC)",
               "sdg1": 4,
               "sdg2": 7,
@@ -4005,7 +4005,7 @@ export async function GET() {
             {
               "id": 4907,
               "energy_source": "Renewable general",
-              "mapper": " Panama",
+              "mapper": "Panama",
               "region": "Regional Bureau for Latin American Countries (RBLAC)",
               "sdg1": 7,
               "sdg2": 9,
@@ -4021,7 +4021,7 @@ export async function GET() {
             {
               "id": 4922,
               "energy_source": "Renewable general",
-              "mapper": " Panama",
+              "mapper": "Panama",
               "region": "Regional Bureau for Latin American Countries (RBLAC)",
               "sdg1": 3,
               "sdg2": 4,
@@ -4037,7 +4037,7 @@ export async function GET() {
             {
               "id": 4923,
               "energy_source": "Renewable general",
-              "mapper": " Panama",
+              "mapper": "Panama",
               "region": "Regional Bureau for Latin American Countries (RBLAC)",
               "sdg1": 7,
               "sdg2": 8,
@@ -4053,7 +4053,7 @@ export async function GET() {
             {
               "id": 5048,
               "energy_source": "Renewable general",
-              "mapper": " Panama",
+              "mapper": "Panama",
               "region": "Regional Bureau for Latin American Countries (RBLAC)",
               "sdg1": 7,
               "sdg2": 8,
@@ -4069,7 +4069,7 @@ export async function GET() {
             {
               "id": 2287,
               "energy_source": "Household application",
-              "mapper": " Philippines",
+              "mapper": "Philippines",
               "region": "Regional Bureau for Asia and Pacific (RBAP)",
               "sdg1": 1,
               "sdg2": 8,
@@ -4085,7 +4085,7 @@ export async function GET() {
             {
               "id": 4744,
               "energy_source": "Solar",
-              "mapper": " Rwanda",
+              "mapper": "Rwanda",
               "region": "Regional Bureau for Africa (RBA)",
               "sdg1": 7,
               "sdg2": 9,
@@ -4101,7 +4101,7 @@ export async function GET() {
             {
               "id": 4790,
               "energy_source": "Thermal",
-              "mapper": " Rwanda",
+              "mapper": "Rwanda",
               "region": "Regional Bureau for Africa (RBA)",
               "sdg1": null,
               "sdg2": null,
@@ -4117,7 +4117,7 @@ export async function GET() {
             {
               "id": 4792,
               "energy_source": "Household application",
-              "mapper": " Rwanda",
+              "mapper": "Rwanda",
               "region": "Regional Bureau for Africa (RBA)",
               "sdg1": 3,
               "sdg2": 7,
@@ -4132,8 +4132,8 @@ export async function GET() {
             },
             {
               "id": 4795,
-              "energy_source": "Solar ",
-              "mapper": " Rwanda",
+              "energy_source": "Solar",
+              "mapper": "Rwanda",
               "region": "Regional Bureau for Africa (RBA)",
               "sdg1": 3,
               "sdg2": 7,
@@ -4149,7 +4149,7 @@ export async function GET() {
             {
               "id": 4796,
               "energy_source": "Household application",
-              "mapper": " Rwanda",
+              "mapper": "Rwanda",
               "region": "Regional Bureau for Africa (RBA)",
               "sdg1": 7,
               "sdg2": 9,
@@ -4165,7 +4165,7 @@ export async function GET() {
             {
               "id": 1674,
               "energy_source": "Renewable general",
-              "mapper": " Sierra Leone",
+              "mapper": "Sierra Leone",
               "region": "Regional Bureau for Africa (RBA)",
               "sdg1": 9,
               "sdg2": 11,
@@ -4180,8 +4180,8 @@ export async function GET() {
             },
             {
               "id": 1707,
-              "energy_source": "Solar ",
-              "mapper": " Sierra Leone",
+              "energy_source": "Solar",
+              "mapper": "Sierra Leone",
               "region": "Regional Bureau for Africa (RBA)",
               "sdg1": null,
               "sdg2": null,
@@ -4197,7 +4197,7 @@ export async function GET() {
             {
               "id": 1685,
               "energy_source": "Thermal",
-              "mapper": " Sierra Leone",
+              "mapper": "Sierra Leone",
               "region": "Regional Bureau for Africa (RBA)",
               "sdg1": 7,
               "sdg2": null,
@@ -4213,7 +4213,7 @@ export async function GET() {
             {
               "id": 1678,
               "energy_source": "Household application",
-              "mapper": " Sierra Leone",
+              "mapper": "Sierra Leone",
               "region": "Regional Bureau for Africa (RBA)",
               "sdg1": 7,
               "sdg2": 12,
@@ -4229,7 +4229,7 @@ export async function GET() {
             {
               "id": 1738,
               "energy_source": "Household application",
-              "mapper": " Sierra Leone",
+              "mapper": "Sierra Leone",
               "region": "Regional Bureau for Africa (RBA)",
               "sdg1": 12,
               "sdg2": 13,
@@ -4245,7 +4245,7 @@ export async function GET() {
             {
               "id": 1736,
               "energy_source": "Solar",
-              "mapper": " Sierra Leone",
+              "mapper": "Sierra Leone",
               "region": "Regional Bureau for Africa (RBA)",
               "sdg1": 11,
               "sdg2": null,
@@ -4261,7 +4261,7 @@ export async function GET() {
             {
               "id": 4728,
               "energy_source": "Solar / Thermal",
-              "mapper": " Syria",
+              "mapper": "Syria",
               "region": "Regional Bureau for Arab States (RBAS)",
               "sdg1": null,
               "sdg2": null,
@@ -4277,7 +4277,7 @@ export async function GET() {
             {
               "id": 4789,
               "energy_source": "Thermal",
-              "mapper": " Syria",
+              "mapper": "Syria",
               "region": "Regional Bureau for Arab States (RBAS)",
               "sdg1": 7,
               "sdg2": 12,
@@ -4293,7 +4293,7 @@ export async function GET() {
             {
               "id": 4798,
               "energy_source": "Solar",
-              "mapper": " Syria",
+              "mapper": "Syria",
               "region": "Regional Bureau for Arab States (RBAS)",
               "sdg1": null,
               "sdg2": null,
@@ -4309,7 +4309,7 @@ export async function GET() {
             {
               "id": 4799,
               "energy_source": "Solar",
-              "mapper": " Syria",
+              "mapper": "Syria",
               "region": "Regional Bureau for Arab States (RBAS)",
               "sdg1": 1,
               "sdg2": 7,
@@ -4325,7 +4325,7 @@ export async function GET() {
             {
               "id": 4806,
               "energy_source": "Thermal",
-              "mapper": " Syria",
+              "mapper": "Syria",
               "region": "Regional Bureau for Arab States (RBAS)",
               "sdg1": 7,
               "sdg2": 12,
@@ -4341,7 +4341,7 @@ export async function GET() {
             {
               "id": 4830,
               "energy_source": "Wind",
-              "mapper": " Syria",
+              "mapper": "Syria",
               "region": "Regional Bureau for Arab States (RBAS)",
               "sdg1": null,
               "sdg2": null,
@@ -4357,7 +4357,7 @@ export async function GET() {
             {
               "id": 4924,
               "energy_source": "Solar",
-              "mapper": " Syria",
+              "mapper": "Syria",
               "region": "Regional Bureau for Arab States (RBAS)",
               "sdg1": 5,
               "sdg2": 7,
@@ -4373,7 +4373,7 @@ export async function GET() {
             {
               "id": 4925,
               "energy_source": "Solar",
-              "mapper": " Syria",
+              "mapper": "Syria",
               "region": "Regional Bureau for Arab States (RBAS)",
               "sdg1": 7,
               "sdg2": null,
@@ -4389,7 +4389,7 @@ export async function GET() {
             {
               "id": 5343,
               "energy_source": "Renewable general",
-              "mapper": " Syria",
+              "mapper": "Syria",
               "region": "Regional Bureau for Arab States (RBAS)",
               "sdg1": 1,
               "sdg2": 7,
@@ -4405,7 +4405,7 @@ export async function GET() {
             {
               "id": 3749,
               "energy_source": "Thermal",
-              "mapper": " Syria",
+              "mapper": "Syria",
               "region": "Regional Bureau for Arab States (RBAS)",
               "sdg1": 2,
               "sdg2": 7,
@@ -4421,7 +4421,7 @@ export async function GET() {
             {
               "id": 1795,
               "energy_source": "Household application",
-              "mapper": " Syria",
+              "mapper": "Syria",
               "region": "Regional Bureau for Arab States (RBAS)",
               "sdg1": 7,
               "sdg2": 12,
@@ -4437,7 +4437,7 @@ export async function GET() {
             {
               "id": 1810,
               "energy_source": "Solar",
-              "mapper": " Syria",
+              "mapper": "Syria",
               "region": "Regional Bureau for Arab States (RBAS)",
               "sdg1": 1,
               "sdg2": 7,
@@ -4453,7 +4453,7 @@ export async function GET() {
             {
               "id": 2851,
               "energy_source": "Household application",
-              "mapper": " Syria",
+              "mapper": "Syria",
               "region": "Regional Bureau for Arab States (RBAS)",
               "sdg1": 7,
               "sdg2": 9,
@@ -4469,7 +4469,7 @@ export async function GET() {
             {
               "id": 1113,
               "energy_source": "Thermal",
-              "mapper": " Tanzania",
+              "mapper": "Tanzania",
               "region": "Regional Bureau for Africa (RBA)",
               "sdg1": 7,
               "sdg2": 9,
@@ -4485,7 +4485,7 @@ export async function GET() {
             {
               "id": 2683,
               "energy_source": "Non-renewable",
-              "mapper": " Timor Leste",
+              "mapper": "Timor Leste",
               "region": "Regional Bureau for Asia and Pacific (RBAP)",
               "sdg1": 9,
               "sdg2": 12,
@@ -4501,7 +4501,7 @@ export async function GET() {
             {
               "id": 2242,
               "energy_source": "Renewable general",
-              "mapper": " Trinidad & Tobago",
+              "mapper": "Trinidad & Tobago",
               "region": "Regional Bureau for Latin American Countries (RBLAC)",
               "sdg1": 2,
               "sdg2": 3,
@@ -4517,7 +4517,7 @@ export async function GET() {
             {
               "id": 4701,
               "energy_source": "Solar",
-              "mapper": " Turkey",
+              "mapper": "Turkey",
               "region": "Regional Bureau for Europe and the Commonwealth of Independent States (RBEC)",
               "sdg1": 1,
               "sdg2": 2,
@@ -4533,7 +4533,7 @@ export async function GET() {
             {
               "id": 2183,
               "energy_source": "Renewable general",
-              "mapper": " Turkey",
+              "mapper": "Turkey",
               "region": "Regional Bureau for Europe and the Commonwealth of Independent States (RBEC)",
               "sdg1": 11,
               "sdg2": 13,
@@ -4549,7 +4549,7 @@ export async function GET() {
             {
               "id": 5195,
               "energy_source": "Renewable general",
-              "mapper": " Uganda",
+              "mapper": "Uganda",
               "region": "Regional Bureau for Africa (RBA)",
               "sdg1": null,
               "sdg2": null,
@@ -4565,7 +4565,7 @@ export async function GET() {
             {
               "id": 5202,
               "energy_source": "Household application",
-              "mapper": " Uganda",
+              "mapper": "Uganda",
               "region": "Regional Bureau for Africa (RBA)",
               "sdg1": 2,
               "sdg2": 3,
@@ -4581,7 +4581,7 @@ export async function GET() {
             {
               "id": 5311,
               "energy_source": "Household application",
-              "mapper": " Uganda",
+              "mapper": "Uganda",
               "region": "Regional Bureau for Africa (RBA)",
               "sdg1": null,
               "sdg2": null,
@@ -4597,7 +4597,7 @@ export async function GET() {
             {
               "id": 837,
               "energy_source": "Household application",
-              "mapper": " Uganda",
+              "mapper": "Uganda",
               "region": "Regional Bureau for Africa (RBA)",
               "sdg1": 7,
               "sdg2": 9,
@@ -4613,7 +4613,7 @@ export async function GET() {
             {
               "id": 836,
               "energy_source": "Thermal",
-              "mapper": " Uganda",
+              "mapper": "Uganda",
               "region": "Regional Bureau for Africa (RBA)",
               "sdg1": 7,
               "sdg2": 9,
@@ -4629,7 +4629,7 @@ export async function GET() {
             {
               "id": 832,
               "energy_source": "Renewable general",
-              "mapper": " Uganda",
+              "mapper": "Uganda",
               "region": "Regional Bureau for Africa (RBA)",
               "sdg1": 7,
               "sdg2": 8,
@@ -4645,7 +4645,7 @@ export async function GET() {
             {
               "id": 817,
               "energy_source": "Solar",
-              "mapper": " Uganda",
+              "mapper": "Uganda",
               "region": "Regional Bureau for Africa (RBA)",
               "sdg1": 6,
               "sdg2": 7,
@@ -4661,7 +4661,7 @@ export async function GET() {
             {
               "id": 109,
               "energy_source": "Thermal",
-              "mapper": " Uganda",
+              "mapper": "Uganda",
               "region": "Regional Bureau for Africa (RBA)",
               "sdg1": 7,
               "sdg2": 9,
@@ -4677,7 +4677,7 @@ export async function GET() {
             {
               "id": 839,
               "energy_source": "Thermal",
-              "mapper": " Uganda",
+              "mapper": "Uganda",
               "region": "Regional Bureau for Africa (RBA)",
               "sdg1": 7,
               "sdg2": 9,
@@ -4693,7 +4693,7 @@ export async function GET() {
             {
               "id": 43,
               "energy_source": "Household application",
-              "mapper": " Uganda",
+              "mapper": "Uganda",
               "region": "Regional Bureau for Africa (RBA)",
               "sdg1": 2,
               "sdg2": 7,
@@ -4709,7 +4709,7 @@ export async function GET() {
             {
               "id": 824,
               "energy_source": "Renewable general",
-              "mapper": " Uganda",
+              "mapper": "Uganda",
               "region": "Regional Bureau for Africa (RBA)",
               "sdg1": 9,
               "sdg2": 13,
@@ -4725,7 +4725,7 @@ export async function GET() {
             {
               "id": 803,
               "energy_source": "Thermal",
-              "mapper": " Uganda",
+              "mapper": "Uganda",
               "region": "Regional Bureau for Africa (RBA)",
               "sdg1": 7,
               "sdg2": 8,
@@ -4741,7 +4741,7 @@ export async function GET() {
             {
               "id": 834,
               "energy_source": "Household application",
-              "mapper": " Uganda",
+              "mapper": "Uganda",
               "region": "Regional Bureau for Africa (RBA)",
               "sdg1": 7,
               "sdg2": 9,
@@ -4757,7 +4757,7 @@ export async function GET() {
             {
               "id": 1045,
               "energy_source": "Solar",
-              "mapper": " Uganda",
+              "mapper": "Uganda",
               "region": "Regional Bureau for Africa (RBA)",
               "sdg1": 7,
               "sdg2": 8,
@@ -4773,7 +4773,7 @@ export async function GET() {
             {
               "id": 42,
               "energy_source": "Solar",
-              "mapper": " Uganda",
+              "mapper": "Uganda",
               "region": "Regional Bureau for Africa (RBA)",
               "sdg1": 2,
               "sdg2": 7,
@@ -4789,7 +4789,7 @@ export async function GET() {
             {
               "id": 821,
               "energy_source": "Thermal",
-              "mapper": " Uganda",
+              "mapper": "Uganda",
               "region": "Regional Bureau for Africa (RBA)",
               "sdg1": 7,
               "sdg2": 9,
@@ -4805,7 +4805,7 @@ export async function GET() {
             {
               "id": 840,
               "energy_source": "Thermal",
-              "mapper": " Uganda",
+              "mapper": "Uganda",
               "region": "Regional Bureau for Africa (RBA)",
               "sdg1": 2,
               "sdg2": 7,
@@ -4821,7 +4821,7 @@ export async function GET() {
             {
               "id": 2529,
               "energy_source": "Thermal",
-              "mapper": " Uruguay",
+              "mapper": "Uruguay",
               "region": "Regional Bureau for Latin American Countries (RBLAC)",
               "sdg1": 1,
               "sdg2": 3,
@@ -4837,7 +4837,7 @@ export async function GET() {
             {
               "id": 1024,
               "energy_source": "Thermal",
-              "mapper": " Vietnam",
+              "mapper": "Vietnam",
               "region": "Regional Bureau for Asia and Pacific (RBAP)",
               "sdg1": 7,
               "sdg2": 9,
@@ -4853,7 +4853,7 @@ export async function GET() {
             {
               "id": 2685,
               "energy_source": "Renewable general",
-              "mapper": " Zambia",
+              "mapper": "Zambia",
               "region": "Regional Bureau for Africa (RBA)",
               "sdg1": 7,
               "sdg2": 9,
@@ -4869,7 +4869,7 @@ export async function GET() {
             {
               "id": 1128,
               "energy_source": "Household application",
-              "mapper": " Zambia",
+              "mapper": "Zambia",
               "region": "Regional Bureau for Africa (RBA)",
               "sdg1": 1,
               "sdg2": 7,
@@ -4885,7 +4885,7 @@ export async function GET() {
             {
               "id": 2690,
               "energy_source": "Thermal",
-              "mapper": " Zambia",
+              "mapper": "Zambia",
               "region": "Regional Bureau for Africa (RBA)",
               "sdg1": 7,
               "sdg2": 9,
@@ -4901,7 +4901,7 @@ export async function GET() {
             {
               "id": 1163,
               "energy_source": "Renewable general",
-              "mapper": " Zambia",
+              "mapper": "Zambia",
               "region": "Regional Bureau for Africa (RBA)",
               "sdg1": 7,
               "sdg2": null,
@@ -4917,7 +4917,7 @@ export async function GET() {
             {
               "id": 1118,
               "energy_source": "Renewable general",
-              "mapper": " Zambia",
+              "mapper": "Zambia",
               "region": "Regional Bureau for Africa (RBA)",
               "sdg1": 1,
               "sdg2": 7,
@@ -4933,7 +4933,7 @@ export async function GET() {
             {
               "id": 1160,
               "energy_source": "Renewable general",
-              "mapper": " Zambia",
+              "mapper": "Zambia",
               "region": "Regional Bureau for Africa (RBA)",
               "sdg1": 7,
               "sdg2": 11,
@@ -4949,7 +4949,7 @@ export async function GET() {
             {
               "id": 1133,
               "energy_source": "Household application",
-              "mapper": " Zambia",
+              "mapper": "Zambia",
               "region": "Regional Bureau for Africa (RBA)",
               "sdg1": 7,
               "sdg2": 12,
@@ -4965,7 +4965,7 @@ export async function GET() {
             {
               "id": 1157,
               "energy_source": "Household application",
-              "mapper": " Zambia",
+              "mapper": "Zambia",
               "region": "Regional Bureau for Africa (RBA)",
               "sdg1": 7,
               "sdg2": null,
@@ -4981,7 +4981,7 @@ export async function GET() {
             {
               "id": 1097,
               "energy_source": "Hydro",
-              "mapper": " Zambia",
+              "mapper": "Zambia",
               "region": "Regional Bureau for Africa (RBA)",
               "sdg1": 7,
               "sdg2": 11,
@@ -4997,7 +4997,7 @@ export async function GET() {
             {
               "id": 933,
               "energy_source": "Thermal",
-              "mapper": " Zimbabwe",
+              "mapper": "Zimbabwe",
               "region": "Regional Bureau for Africa (RBA)",
               "sdg1": 12,
               "sdg2": 13,
@@ -5013,7 +5013,7 @@ export async function GET() {
             {
               "id": 1139,
               "energy_source": "Solar",
-              "mapper": " Zimbabwe",
+              "mapper": "Zimbabwe",
               "region": "Regional Bureau for Africa (RBA)",
               "sdg1": 1,
               "sdg2": 3,
