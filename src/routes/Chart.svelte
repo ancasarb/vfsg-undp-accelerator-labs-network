@@ -1,8 +1,15 @@
 <script>
-	import { metadata, energySourcePadding } from './../transform.js';
+	import Rows from './../components/Rows.svelte';
+	import { loop_guard } from 'svelte/internal';
+
+	import { regionMetadata, energySourceMetadata } from './../transform.js';
 	import { getCountsByEnergySource, getCountsByRegion } from '../transform';
-	import { axisLeft, extent, scaleBand, scaleLinear, select } from 'd3';
+	import { extent, scaleBand, scaleLinear } from 'd3';
 	import { find, max, meanBy, uniq } from 'lodash';
+
+	import XAxis from './../components/XAxis.svelte';
+	import YAxis from './../components/YAxis.svelte';
+	import Gridlines from './../components/Gridlines.svelte';
 
 	export let data;
 
@@ -12,12 +19,12 @@
 		margin: {
 			top: 200,
 			left: 250,
-			bottom: 0,
+			bottom: 25,
 			right: 0
-		}
+		},
+		rowHeight: 100
 	};
 
-	dimensions.innerHeight = dimensions.height - dimensions.margin.top - dimensions.margin.bottom;
 	dimensions.innerWidth = dimensions.width - dimensions.margin.left - dimensions.margin.right;
 
 	const regionAccessor = (d) => d.region;
@@ -26,238 +33,65 @@
 	const countriesAccessor = (d) => d.countries;
 
 	$: regionData = getCountsByRegion(data);
+	$: energySourceData = getCountsByEnergySource(data);
+
 	$: energySources = uniq(data.map(energySourceAccessor)).sort();
 	$: regions = uniq(regionData.map(regionAccessor)).sort();
-	$: maxProjectCounts = max(regionData.map(energySourceAccessor).flat().map(projectsAccessor));
+	$: maxProjects = max(regionData.map(energySourceAccessor).flat().map(projectsAccessor));
 
 	$: xScale = scaleBand().domain(energySources).rangeRound([0, dimensions.innerWidth]).padding(0.2);
-	$: yScale = scaleLinear().domain([0, maxProjectCounts]).range([100, 10]);
+	$: yScale = scaleLinear().domain([0, maxProjects]).range([100, 10]);
 
-	$: values = energySources.map((es) => {
-		return { value: es, x: xScale(es) };
-	});
+	$: energySourceData = energySourceData.map((item) => ({
+		...item,
+		projects_avg: meanBy(regionAccessor(item), 'projects')
+	}));
 
-	$: energySourceAverages = getCountsByEnergySource(data).map((item) => {
+	$: chartRows = regions.map((region) => {
+		const items = energySourceAccessor(find(regionData, { region: region })).map((item) => {
+			const energySource = energySourceAccessor(item);
+			return {
+				key: energySource,
+				value: projectsAccessor(item),
+				average_value: find(energySourceData, { energy_source: energySource }).projects_avg
+			};
+		});
+
 		return {
-			energy_source: energySourceAccessor(item),
-			average: meanBy(regionAccessor(item), 'projects')
+			rowKey: region,
+			rowColor: find(regionMetadata, { region: region }).color,
+			items: items
 		};
 	});
-
-	let axis0;
-
-	$: {
-		let axisGenerator = axisLeft().scale(yScale).tickValues([0, 10, 20, 30, 40]);
-		select(axis0).call(axisGenerator);
-		select(axis0).select('.domain').attr('stroke-width', 0);
-		select(axis0).selectAll('.tick').select('line').attr('stroke-width', 0);
-		select(axis0)
-			.selectAll('.tick')
-			.select('text')
-			.attr('fill', '#747170')
-			.attr('font-weight', 'bold')
-			.attr('text-anchor', 'middle');
-	}
-
-	let axis1;
-
-	$: {
-		let axisGenerator = axisLeft().scale(yScale).tickValues([0, 10, 20, 30, 40]);
-		select(axis1).call(axisGenerator);
-		select(axis1).select('.domain').attr('stroke-width', 0);
-		select(axis1).selectAll('.tick').select('line').attr('stroke-width', 0);
-		select(axis1)
-			.selectAll('.tick')
-			.select('text')
-			.attr('fill', '#747170')
-			.attr('font-weight', 'bold')
-			.attr('text-anchor', 'middle');
-	}
-
-	let axis2;
-
-	$: {
-		let axisGenerator = axisLeft().scale(yScale).tickValues([0, 10, 20, 30, 40]);
-		select(axis2).call(axisGenerator);
-		select(axis2).select('.domain').attr('stroke-width', 0);
-		select(axis2).selectAll('.tick').select('line').attr('stroke-width', 0);
-		select(axis2)
-			.selectAll('.tick')
-			.select('text')
-			.attr('fill', '#747170')
-			.attr('font-weight', 'bold')
-			.attr('text-anchor', 'middle');
-	}
-
-	let axis3;
-
-	$: {
-		let axisGenerator = axisLeft().scale(yScale).tickValues([0, 10, 20, 30, 40]);
-		select(axis3).call(axisGenerator);
-		select(axis3).select('.domain').attr('stroke-width', 0);
-		select(axis3).selectAll('.tick').select('line').attr('stroke-width', 0);
-		select(axis3)
-			.selectAll('.tick')
-			.select('text')
-			.attr('fill', '#747170')
-			.attr('font-weight', 'bold')
-			.attr('text-anchor', 'middle');
-	}
-
-	let axis4;
-
-	$: {
-		let axisGenerator = axisLeft().scale(yScale).tickValues([0, 10, 20, 30, 40]);
-		select(axis4).call(axisGenerator);
-		select(axis4).select('.domain').attr('stroke-width', 0);
-		select(axis4).selectAll('.tick').select('line').attr('stroke-width', 0);
-		select(axis4)
-			.selectAll('.tick')
-			.select('text')
-			.attr('fill', '#747170')
-			.attr('font-weight', 'bold')
-			.attr('text-anchor', 'middle');
-	}
 </script>
 
 <svg width={dimensions.width} height={dimensions.height}>
-	<g transform={`translate(${dimensions.margin.left})`}>
-		{#each values as item}
-			{@const x = item.x}
-			{@const value = item.value}
-			<line x1={x} y1={10} x2={x} y2={dimensions.margin.top - 10} class="x-axis-line" />
-			<rect
-				x={-dimensions.margin.top + 20}
-				y={x - 5}
-				width={find(energySourcePadding, { energySource: value }).padding}
-				height={10}
-				transform={`rotate(-90)`}
-				class="x-axis-background"
-			/>
-			<text x={-dimensions.margin.top + 40} y={x + 4} class="x-axis-text" transform={`rotate(-90)`}
-				>{value}</text
-			>
-			<circle cx={x} cy={dimensions.margin.top - 25} r={5} class="x-axis-circle" />
-		{/each}
-	</g>
+	<XAxis
+		chartDimensions={dimensions}
+		labels={energySources.map((e) => {
+			return {
+				label: e,
+				xPosition: xScale(e),
+				padding: find(energySourceMetadata, { energySource: e }).padding
+			};
+		})}
+	/>
 
-	<g transform={`translate(${dimensions.margin.left})`}>
-		<rect x={-20} y={0} width={20} height={dimensions.height} fill="#f4f4f4" />
-		<text x={-dimensions.margin.top + 10} y={-4} class="y-axis-note" transform={`rotate(-90)`}
-			>NUMBER OF PROJECTS</text
-		>
-	</g>
+	<Gridlines chartDimensions={dimensions} xPositions={energySources.map(xScale)} />
 
-	<g transform={`translate(${dimensions.margin.left},${dimensions.margin.top})`}>
-		{#each values as item}
-			{@const x = item.x}
-			{@const value = item.value}
-			<line x1={x} y1={0} x2={x} y2={dimensions.innerHeight} class="grid-line" />
-		{/each}
-	</g>
+	<YAxis
+		chartDimensions={dimensions}
+		labels={regions.map((r) => find(regionMetadata, { region: r }).display)}
+		rowYScale={yScale}
+	/>
 
-	{#each regions as region, i}
-		{@const energySources = energySourceAccessor(find(regionData, { region: region }))}
-		{@const color = find(metadata, { region: region }).color}
-		{@const display = find(metadata, { region: region }).display}
-
-		<g transform={`translate(0, ${dimensions.margin.top + 100 * i})`}>
-			{#each display as d, i}
-				<text class="y-axis-text" x={150} y={50 + i * 15} fill="black">{d}</text>
-			{/each}
-			<line
-				x1={dimensions.margin.left}
-				y1={100}
-				x2={dimensions.width - 75}
-				y2={100}
-				stroke="black"
-			/>
-		</g>
-
-		<g transform={`translate(${dimensions.margin.left},${dimensions.margin.top + 100 * i})`}>
-			{#if i == 0}
-				<g bind:this={axis0} />
-			{/if}
-
-			{#if i == 1}
-				<g bind:this={axis1} />
-			{/if}
-
-			{#if i == 2}
-				<g bind:this={axis2} />
-			{/if}
-
-			{#if i == 3}
-				<g bind:this={axis3} />
-			{/if}
-
-			{#if i == 4}
-				<g bind:this={axis4} />
-			{/if}
-
-			{#each energySources as item}
-				{@const energySource = energySourceAccessor(item)}
-				{@const x = find(values, { value: energySource }).x}
-				{@const average = find(energySourceAverages, { energy_source: energySource }).average}
-				<rect
-					x={x - 5}
-					y={yScale(projectsAccessor(item))}
-					width={10}
-					height={100 - yScale(projectsAccessor(item))}
-					fill={color}
-				/>
-				<line
-					x1={x - 10}
-					y1={yScale(average)}
-					x2={x + 10}
-					y2={yScale(average)}
-					class="average-line"
-				/>
-			{/each}
-		</g>
-	{/each}
+	<Rows
+		chartDimensions={dimensions}
+		{chartRows}
+		{xScale}
+		{yScale}
+		xAccessor={(item) => item.key}
+		yAccessor={(item) => item.value}
+		yAvgAccessor={(item) => item.average_value}
+	/>
 </svg>
-
-<style>
-	.grid-line {
-		stroke-dasharray: 2;
-		stroke: #c0bfbf;
-		stroke-width: 0.5;
-	}
-
-	.x-axis-line {
-		stroke: #c0bfbf;
-	}
-
-	.x-axis-circle {
-		fill: white;
-		stroke: black;
-		stroke-width: 0.5;
-	}
-
-	.x-axis-text {
-		font-size: 12px;
-	}
-
-	.x-axis-background {
-		fill: white;
-	}
-
-	.y-axis-text {
-		font-size: 12px;
-	}
-
-	.average-line {
-		stroke: black;
-		stroke-width: 2;
-	}
-
-	.y-axis-text {
-		text-anchor: middle;
-	}
-
-	.y-axis-note {
-		fill: #747170;
-		font-weight: bold;
-	}
-</style>

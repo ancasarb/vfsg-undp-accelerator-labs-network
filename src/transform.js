@@ -46,7 +46,7 @@ export function getCountsByRegion(data) {
 	});
 }
 
-export const metadata = [
+export const regionMetadata = [
 	{
 		color: '#02aad1',
 		region: 'Regional Bureau for Africa (RBA)',
@@ -74,7 +74,7 @@ export const metadata = [
 	}
 ];
 
-export const energySourcePadding = [
+export const energySourceMetadata = [
 	{ energySource: 'N/A', padding: 45 },
 	{ energySource: 'Chemical', padding: 75 },
 	{ energySource: 'Household application', padding: 150 },
