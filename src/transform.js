@@ -1,4 +1,4 @@
-import { groupBy, uniqBy } from 'lodash';
+import { filter, groupBy, uniqBy } from 'lodash';
 
 export function getCountsByEnergySource(data) {
 	return Object.entries(groupBy(data, 'energy_source')).map((energySourceEntry) => {
@@ -34,7 +34,13 @@ export function getCountsByRegion(data) {
 				return {
 					energy_source: energySource,
 					projects: elementsWithEnergySource.length,
-					countries: uniqBy(elementsWithEnergySource, 'mapper').length
+					countries: uniqBy(elementsWithEnergySource, 'mapper').length,
+					prototypes: filter(elementsWithEnergySource, (item) => item.prototype === 'x').length,
+					products: filter(elementsWithEnergySource, (item) => item.product === 'x').length,
+					none: filter(
+						elementsWithEnergySource,
+						(item) => item.product === '' && item.prototype === ''
+					).length
 				};
 			}
 		);

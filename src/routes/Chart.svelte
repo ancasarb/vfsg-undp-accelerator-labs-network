@@ -1,6 +1,5 @@
 <script>
 	import Rows from './../components/Rows.svelte';
-	import { loop_guard } from 'svelte/internal';
 
 	import { regionMetadata, energySourceMetadata } from './../transform.js';
 	import { getCountsByEnergySource, getCountsByRegion } from '../transform';
@@ -53,7 +52,12 @@
 			return {
 				key: energySource,
 				value: projectsAccessor(item),
-				average_value: find(energySourceData, { energy_source: energySource }).projects_avg
+				average_value: find(energySourceData, { energy_source: energySource }).projects_avg,
+				// by maturity stage
+				grouped_values: {
+					categories: ['product', 'prototype', 'n/a'],
+					values: [{ product: item.products, prototype: item.prototypes, 'n/a': item.none }]
+				}
 			};
 		});
 
