@@ -51,9 +51,9 @@
 				/>
 
 				<rect
-					x={x - barWidth / 2 - 7.5}
+					x={x - barWidth / 2 - barWidth /2}
 					y={ySplit1}
-					width={7.5}
+					width={barWidth / 2}
 					height={chartDimensions.rowHeight - ySplit1}
 					stroke="black"
 					fill={splitsTextures[0].url()}
@@ -63,7 +63,7 @@
 				<rect
 					x={x + barWidth / 2}
 					y={ySplit2}
-					width={7.5}
+					width={barWidth / 2}
 					height={chartDimensions.rowHeight - ySplit2}
 					stroke="black"
 					fill={splitsTextures[1].url()}
