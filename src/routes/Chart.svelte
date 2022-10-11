@@ -2,9 +2,9 @@
 	import Rows from './../components/Rows.svelte';
 
 	import { regionMetadata, energySourceMetadata } from './../transform.js';
-	import { getCountsByRegion } from '../transform';
+	import { getCountsByRegionAndEnergySource, getTotalProjects } from '../transform';
 	import { scaleBand, scaleLinear } from 'd3';
-	import { find, max, uniq } from 'lodash';
+	import { find, max, orderBy, uniq } from 'lodash';
 
 	import XAxis from './../components/XAxis.svelte';
 	import YAxis from './../components/YAxis.svelte';
@@ -31,17 +31,18 @@
 	const projectsAccessor = (d) => d.projects;
 	const countriesAccessor = (d) => d.countries;
 
-	$: regionData = getCountsByRegion(data);
+	$: regionEnergySourceData = getCountsByRegionAndEnergySource(data);
+	$: totalProjects = getTotalProjects(data);
 
-	$: energySources = uniq(data.map(energySourceAccessor)).sort();
-	$: regions = uniq(regionData.map(regionAccessor)).sort();
-	$: maxProjects = max(regionData.map(energySourceAccessor).flat().map(projectsAccessor));
+	$: energySources = orderBy(totalProjects, 'total_projects', ['desc']).map(energySourceAccessor);
+	$: regions = uniq(regionEnergySourceData.map(regionAccessor)).sort();
+	$: maxProjects = max(regionEnergySourceData.map(energySourceAccessor).flat().map(projectsAccessor));
 
 	$: xScale = scaleBand().domain(energySources).rangeRound([0, dimensions.innerWidth]).padding(0.5);
 	$: yScale = scaleLinear().domain([0, maxProjects]).range([100, 10]);
 
 	$: chartRows = regions.map((region) => {
-		const items = energySourceAccessor(find(regionData, { region: region })).map((item) => {
+		const items = energySourceAccessor(find(regionEnergySourceData, { region: region })).map((item) => {
 			const energySource = energySourceAccessor(item);
 			return {
 				key: energySource,
