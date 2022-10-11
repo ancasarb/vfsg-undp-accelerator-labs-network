@@ -9,17 +9,18 @@
 	import XAxis from './../components/XAxis.svelte';
 	import YAxis from './../components/YAxis.svelte';
 	import Gridlines from './../components/Gridlines.svelte';
+	import Legend from '../components/Legend.svelte';
 
 	export let data;
 
 	const dimensions = {
-		width: 1000,
+		width: 1300,
 		height: 725,
 		margin: {
 			top: 200,
 			left: 250,
 			bottom: 25,
-			right: 0
+			right: 300
 		},
 		rowHeight: 100
 	};
@@ -92,4 +93,6 @@
 		additionalDataAccessor={(item) => item.countries_value}
 		splitsDataAccessor={(item) => item.splits}
 	/>
+
+	<Legend chartDimensions={dimensions}/>
 </svg>

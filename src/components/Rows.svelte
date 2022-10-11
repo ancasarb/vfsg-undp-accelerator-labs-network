@@ -84,7 +84,7 @@
 			<line
 				x1={chartDimensions.margin.left}
 				y1={chartDimensions.rowHeight}
-				x2={chartDimensions.width - 20}
+				x2={chartDimensions.width - 20 - chartDimensions.margin.right}
 				y2={chartDimensions.rowHeight}
 				stroke="black"
 			/>
