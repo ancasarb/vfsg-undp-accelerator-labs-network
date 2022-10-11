@@ -53,12 +53,6 @@
 				height={chartDimensions.height}
 				fill="#f4f4f4"
 			/>
-			<text
-				x={-chartDimensions.margin.top}
-				y={-rowAxisPadding}
-				class="y-axis-title"
-				transform={`rotate(-90)`}>NUMBER OF PROJECTS</text
-			>
 			{#each labels as l, i}
 				<g
 					transform={`translate(0, ${
