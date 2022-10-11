@@ -18,11 +18,17 @@
 	const additionalDataLineHeight = 3;
 	const additionalDataLineLeftMargin = 1.5;
 
-	const splitsTexture = textures.lines().orientation('6/8').lighter().lighter().thicker().thicker();
+	const splitsTextures = [
+		textures.lines().orientation('6/8').stroke('#02aad1').lighter().lighter().thicker().thicker(),
+		textures.lines().orientation('6/8').stroke('#8e4784').lighter().lighter().thicker().thicker(),
+		textures.lines().orientation('6/8').stroke('#f59421').lighter().lighter().thicker().thicker(),
+		textures.lines().orientation('6/8').stroke('#e00102').lighter().lighter().thicker().thicker(),
+		textures.lines().orientation('6/8').stroke('#36978e').lighter().lighter().thicker().thicker()
+	];
 
 	let group;
 	$: {
-		select(group).call(splitsTexture);
+		splitsTextures.map((t) => select(group).call(t));
 	}
 </script>
 
@@ -52,8 +58,8 @@
 					y={ySplit1}
 					width={barWidth / 2}
 					height={chartDimensions.rowHeight - ySplit1}
-					stroke="black"
-					fill={splitsTexture.url()}
+					stroke={row.rowColor}
+					fill={splitsTextures[i].url()}
 					stroke-width={0.5}
 				/>
 
@@ -62,7 +68,7 @@
 					y={ySplit2}
 					width={barWidth / 2}
 					height={chartDimensions.rowHeight - ySplit2}
-					stroke="black"
+					stroke={row.rowColor}
 					fill="white"
 					stroke-width={0.5}
 				/>
