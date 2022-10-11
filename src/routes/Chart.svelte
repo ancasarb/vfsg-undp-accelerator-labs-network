@@ -37,7 +37,7 @@
 	$: regions = uniq(regionData.map(regionAccessor)).sort();
 	$: maxProjects = max(regionData.map(energySourceAccessor).flat().map(projectsAccessor));
 
-	$: xScale = scaleBand().domain(energySources).rangeRound([0, dimensions.innerWidth]).padding(0.2);
+	$: xScale = scaleBand().domain(energySources).rangeRound([0, dimensions.innerWidth]).padding(0.5);
 	$: yScale = scaleLinear().domain([0, maxProjects]).range([100, 10]);
 
 	$: chartRows = regions.map((region) => {
@@ -81,7 +81,6 @@
 		labels={regions.map((r) => find(regionMetadata, { region: r }).display)}
 		rowYScale={yScale}
 	/>
-
 	<Rows
 		chartDimensions={dimensions}
 		{chartRows}

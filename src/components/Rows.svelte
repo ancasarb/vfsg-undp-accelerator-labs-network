@@ -84,16 +84,10 @@
 			<line
 				x1={chartDimensions.margin.left}
 				y1={chartDimensions.rowHeight}
-				x2={chartDimensions.width - 50}
+				x2={chartDimensions.width - 20}
 				y2={chartDimensions.rowHeight}
-				class="baseline"
+				stroke="black"
 			/>
 		</g>
 	{/each}
 </g>
-
-<style>
-	.baseline {
-		stroke: black;
-	}
-</style>

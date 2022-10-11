@@ -2,7 +2,7 @@
 	import { axisLeft, select } from 'd3';
 
 	export let chartDimensions;
-    
+
 	export let rowYScale;
 	export let labels;
 
@@ -19,8 +19,11 @@
 			.attr('text-anchor', 'middle');
 	};
 
-	$: rowsAxis = [null, null, null, null, null];
-	$: rowsAxis.map((axis) => chartAxis(axis));
+	$: leftRowsAxis = [null, null, null, null, null];
+	$: leftRowsAxis.map((axis) => chartAxis(axis));
+
+	$: rightRowsAxis = [null, null, null, null, null];
+	$: rightRowsAxis.map((axis) => chartAxis(axis));
 
 	const multipleRowsLabelPadding = 15;
 	const rowsAxisWidth = 20;
@@ -42,6 +45,30 @@
 			class="y-axis-title"
 			transform={`rotate(-90)`}>NUMBER OF PROJECTS</text
 		>
+		<g transform={`translate(${chartDimensions.innerWidth})`}>
+			<rect
+				x={-rowsAxisWidth}
+				y={0}
+				width={rowsAxisWidth}
+				height={chartDimensions.height}
+				fill="#f4f4f4"
+			/>
+			<text
+				x={-chartDimensions.margin.top}
+				y={-rowAxisPadding}
+				class="y-axis-title"
+				transform={`rotate(-90)`}>NUMBER OF PROJECTS</text
+			>
+			{#each labels as l, i}
+				<g
+					transform={`translate(0, ${
+						chartDimensions.margin.top + chartDimensions.rowHeight * i
+					})`}
+				>
+					<g bind:this={rightRowsAxis[i]} />
+				</g>
+			{/each}
+		</g>
 	</g>
 	{#each labels as label, i}
 		<g transform={`translate(0, ${chartDimensions.margin.top + chartDimensions.rowHeight * i})`}>
@@ -54,7 +81,7 @@
 				>
 			{/each}
 			<g transform={`translate(${chartDimensions.margin.left},0)`}>
-				<g bind:this={rowsAxis[i]} />
+				<g bind:this={leftRowsAxis[i]} />
 			</g>
 		</g>
 	{/each}
