@@ -46,12 +46,21 @@
 	{#each labels as label, i}
 		<g transform={`translate(0, ${chartDimensions.margin.top + chartDimensions.rowHeight * i})`}>
 			{#each label as d, j}
-				<text
-					class="y-axis-text"
-					x={chartDimensions.margin.left - 100}
-					y={chartDimensions.rowHeight / 2 + j * multipleRowsLabelPadding}
-					fill="black">{d}</text
-				>
+				{#if i === 3}
+					<text
+						class="y-axis-text"
+						x={chartDimensions.margin.left - 100}
+						y={chartDimensions.rowHeight / 2 - 15 + j * multipleRowsLabelPadding}
+						fill="black">{d}</text
+					>
+				{:else}
+					<text
+						class="y-axis-text"
+						x={chartDimensions.margin.left - 100}
+						y={chartDimensions.rowHeight / 2 + j * multipleRowsLabelPadding}
+						fill="black">{d}</text
+					>
+				{/if}
 			{/each}
 			<g transform={`translate(${chartDimensions.margin.left},0)`}>
 				<g bind:this={rowAxis[i]} />

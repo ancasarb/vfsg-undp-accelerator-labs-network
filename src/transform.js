@@ -59,12 +59,12 @@ export const regionMetadata = [
 	{
 		color: '#e00102',
 		region: 'Regional Bureau for Europe and the Commonwealth of Independent States (RBEC)',
-		display: ['Regional Bureau for Europe', 'and the Commonwealth of', 'Independent States (RBEC)']
+		display: ['Regional Bureau for', 'Europe and the', 'Commonwealth of', 'Independent States', '(RBEC)']
 	},
 	{
 		color: '#36978e',
 		region: 'Regional Bureau for Latin American Countries (RBLAC)',
-		display: ['Regional Bureau for', 'Latin American Countries', '(RBLAC)']
+		display: ['Regional Bureau for', 'Latin American', 'Countries (RBLAC)']
 	}
 ];
 
