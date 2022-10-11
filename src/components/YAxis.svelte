@@ -19,11 +19,8 @@
 			.attr('text-anchor', 'middle');
 	};
 
-	$: leftRowsAxis = [null, null, null, null, null];
-	$: leftRowsAxis.map((axis) => chartAxis(axis));
-
-	$: rightRowsAxis = [null, null, null, null, null];
-	$: rightRowsAxis.map((axis) => chartAxis(axis));
+	$: rowAxis = [null, null, null, null, null];
+	$: rowAxis.map((axis) => chartAxis(axis));
 
 	const multipleRowsLabelPadding = 15;
 	const rowsAxisWidth = 20;
@@ -45,24 +42,6 @@
 			class="y-axis-title"
 			transform={`rotate(-90)`}>NUMBER OF PROJECTS</text
 		>
-		<g transform={`translate(${chartDimensions.innerWidth})`}>
-			<rect
-				x={-rowsAxisWidth}
-				y={0}
-				width={rowsAxisWidth}
-				height={chartDimensions.height}
-				fill="#f4f4f4"
-			/>
-			{#each labels as l, i}
-				<g
-					transform={`translate(0, ${
-						chartDimensions.margin.top + chartDimensions.rowHeight * i
-					})`}
-				>
-					<g bind:this={rightRowsAxis[i]} />
-				</g>
-			{/each}
-		</g>
 	</g>
 	{#each labels as label, i}
 		<g transform={`translate(0, ${chartDimensions.margin.top + chartDimensions.rowHeight * i})`}>
@@ -75,7 +54,7 @@
 				>
 			{/each}
 			<g transform={`translate(${chartDimensions.margin.left},0)`}>
-				<g bind:this={leftRowsAxis[i]} />
+				<g bind:this={rowAxis[i]} />
 			</g>
 		</g>
 	{/each}
