@@ -79,7 +79,7 @@
 			<line
 				x1={chartDimensions.margin.left}
 				y1={chartDimensions.rowHeight}
-				x2={chartDimensions.width - 75}
+				x2={chartDimensions.width - 50}
 				y2={chartDimensions.rowHeight}
 				class="baseline"
 			/>
