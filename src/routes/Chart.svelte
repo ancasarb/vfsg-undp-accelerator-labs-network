@@ -10,6 +10,7 @@
 	import YAxis from './../components/YAxis.svelte';
 	import Gridlines from './../components/Gridlines.svelte';
 	import Legend from '../components/Legend.svelte';
+	import Title from '../components/Title.svelte';
 
 	export let data;
 
@@ -65,6 +66,8 @@
 </script>
 
 <svg width={dimensions.width} height={dimensions.height}>
+	<Title chartDimensions={dimensions}/>
+
 	<XAxis
 		chartDimensions={dimensions}
 		labels={energySources.map((e) => {
