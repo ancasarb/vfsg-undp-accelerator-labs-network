@@ -1,7 +1,7 @@
 <script>
 	import { find } from 'lodash';
 	import textures from 'textures';
-	import {select} from 'd3';
+	import { select } from 'd3';
 
 	export let chartRows;
 	export let chartDimensions;
@@ -18,14 +18,11 @@
 	const additionalDataLineHeight = 3;
 	const additionalDataLineLeftMargin = 1.5;
 
-	const splitsTextures = [
-		textures.lines().orientation('6/8').lighter().lighter().thicker().thicker(),
-		textures.paths().d('waves').lighter().lighter().thicker().thicker()
-	];
+	const splitsTexture = textures.lines().orientation('6/8').lighter().lighter().thicker().thicker();
 
 	let group;
 	$: {
-		splitsTextures.map((t) => select(group).call(t));
+		select(group).call(splitsTexture);
 	}
 </script>
 
@@ -51,22 +48,22 @@
 				/>
 
 				<rect
-					x={x - barWidth / 2 - barWidth /2}
+					x={x - barWidth / 2 - barWidth / 2 - 2}
 					y={ySplit1}
 					width={barWidth / 2}
 					height={chartDimensions.rowHeight - ySplit1}
 					stroke="black"
-					fill={splitsTextures[0].url()}
+					fill={splitsTexture.url()}
 					stroke-width={0.5}
 				/>
 
 				<rect
-					x={x + barWidth / 2}
+					x={x + barWidth / 2 + 2}
 					y={ySplit2}
 					width={barWidth / 2}
 					height={chartDimensions.rowHeight - ySplit2}
 					stroke="black"
-					fill={splitsTextures[1].url()}
+					fill="white"
 					stroke-width={0.5}
 				/>
 
