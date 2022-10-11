@@ -18,7 +18,7 @@
 		width: 1300,
 		height: 725,
 		margin: {
-			top: 200,
+			top: 195,
 			left: 250,
 			bottom: 25,
 			right: 300

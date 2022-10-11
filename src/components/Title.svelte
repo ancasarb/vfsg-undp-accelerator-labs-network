@@ -1,19 +1,15 @@
 <script>
-    export let chartDimensions;
-
-    const padding = 20;
+	export let chartDimensions;
 </script>
 
-<text x={30} y={chartDimensions.margin.top / 2}>Project distribution</text>
-<text x={30} y={chartDimensions.margin.top / 2 + padding}>across countries</text>
-<text x={30} y={chartDimensions.margin.top / 2 + padding * 2}>regions,</text>
-<text x={30} y={chartDimensions.margin.top / 2 + padding * 3}>and energy sources</text>
-
+<text x={chartDimensions.margin.left + chartDimensions.innerWidth / 2} y={chartDimensions.height - 4}
+	>Project distribution across countries, regions, and energy sources</text
+>
 
 <style>
-    text {
-        font-size: 18px;
-        font-weight: bold;
-        text-anchor:start;
-    }
+	text {
+		font-size: 16px;
+		font-weight: bold;
+		text-anchor: middle;
+	}
 </style>
