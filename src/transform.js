@@ -59,7 +59,7 @@ export const regionMetadata = [
 		display: ['Regional Bureau for', 'Africa (RBA)']
 	},
 	{
-		color: '#013466',
+		color: '#8e4784',
 		region: 'Regional Bureau for Arab States (RBAS)',
 		display: ['Regional Bureau for', 'Arab States (RBAS)']
 	},
@@ -69,12 +69,12 @@ export const regionMetadata = [
 		display: ['Regional Bureau for', 'Asia and Pacific (RBAP)']
 	},
 	{
-		color: '#e00100',
+		color: '#e00102',
 		region: 'Regional Bureau for Europe and the Commonwealth of Independent States (RBEC)',
 		display: ['Regional Bureau for Europe', 'and the Commonwealth of', 'Independent States (RBEC)']
 	},
 	{
-		color: '#990002',
+		color: '#36978e',
 		region: 'Regional Bureau for Latin American Countries (RBLAC)',
 		display: ['Regional Bureau for', 'Latin American Countries', '(RBLAC)']
 	}

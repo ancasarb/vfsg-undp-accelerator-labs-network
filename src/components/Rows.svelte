@@ -1,7 +1,5 @@
 <script>
-	import { select, stack } from 'd3';
-	import textures from 'textures';
-	import { filter } from 'lodash';
+	import { find } from 'lodash';
 
 	export let chartRows;
 	export let chartDimensions;
@@ -12,35 +10,17 @@
 	export let xAccessor;
 	export let yAccessor;
 	export let yAvgAccessor;
+	export let additionalDataAccessor;
+	export let splitsDataAccessor;
 
-	const avgLineLength = 30;
+	const avgLineWidth = 24;
 	const barWidth = 20;
-
-	const barTextures = [
-		textures.paths().d('crosses').lighter().thicker().thicker(),
-		textures.lines().orientation('6/8').lighter().thicker().thicker().stroke('black'),
-		textures.paths().d('waves').lighter().thicker().thicker().stroke('black')
-	];
-
-	let group;
-
-	$: {
-		barTextures.map((t) => select(group).call(t));
-	}
+	const additionalDataLineHeight = 3;
+	const additionalDataLineLeftMargin = 1.5;
 </script>
 
-<g bind:this={group}>
+<g>
 	{#each chartRows as row, i}
-		<g transform={`translate(0, ${chartDimensions.margin.top + chartDimensions.rowHeight * i})`}>
-			<line
-				x1={chartDimensions.margin.left}
-				y1={chartDimensions.rowHeight}
-				x2={chartDimensions.width - 75}
-				y2={chartDimensions.rowHeight}
-				class="baseline"
-			/>
-		</g>
-
 		<g
 			transform={`translate(${chartDimensions.margin.left},${
 				chartDimensions.margin.top + chartDimensions.rowHeight * i
@@ -50,14 +30,8 @@
 				{@const x = xScale(xAccessor(item))}
 				{@const y = yScale(yAccessor(item))}
 				{@const yAvg = yScale(yAvgAccessor(item))}
-
-				<line
-					x1={x - avgLineLength / 2}
-					y1={yAvg}
-					x2={x + avgLineLength / 2}
-					y2={yAvg}
-					class="average-line"
-				/>
+				{@const ySplit1 = yScale(find(splitsDataAccessor(item), { key: 1 }).value)}
+				{@const ySplit2 = yScale(find(splitsDataAccessor(item), { key: 2 }).value)}
 
 				<rect
 					x={x - barWidth / 2}
@@ -65,34 +39,56 @@
 					width={barWidth}
 					height={chartDimensions.rowHeight - y}
 					fill={row.rowColor}
-					class="item-value"
 				/>
 
-				{#each stack().keys(item.grouped_values.categories)(item.grouped_values.values) as stack, j}
-					{@const d = stack[0]}
-					<rect
-						x={x - barWidth / 2}
-						y={yScale(d[1])}
-						width={barWidth}
-						height={yScale(d[0]) - yScale(d[1])}
-						fill={barTextures[j].url()}
-					/>
+				<line
+					x1={x - barWidth / 2 - 7.5}
+					y1={ySplit1}
+					x2={x - barWidth / 2 - 7.5}
+					y2={chartDimensions.rowHeight}
+					stroke={row.rowColor}
+					stroke-width="2"
+				/>
+
+				<rect
+					x={x - barWidth / 2 - 4}
+					y={ySplit2}
+					width={2}
+					height={chartDimensions.rowHeight - ySplit2}
+					stroke={row.rowColor}
+					fill="white"
+					stroke-width={0.5}
+				/>
+
+				<line
+					x1={x - avgLineWidth / 2}
+					y1={yAvg}
+					x2={x + avgLineWidth / 2}
+					y2={yAvg}
+					class="average-line"
+				/>
+
+				{#each [...Array(additionalDataAccessor(item)).keys()] as index}
+					{@const additionalDataX =
+						x - barWidth / 2 + index * additionalDataLineHeight + additionalDataLineLeftMargin}
+					<line x1={additionalDataX} y1={y - 5} x2={additionalDataX} y2={y} stroke="black" />
 				{/each}
 			{/each}
+		</g>
+		<g transform={`translate(0, ${chartDimensions.margin.top + chartDimensions.rowHeight * i})`}>
+			<line
+				x1={chartDimensions.margin.left}
+				y1={chartDimensions.rowHeight}
+				x2={chartDimensions.width - 75}
+				y2={chartDimensions.rowHeight}
+				class="baseline"
+			/>
 		</g>
 	{/each}
 </g>
 
 <style>
-	.average-line {
-		stroke: black;
-		stroke-width: 2;
-	}
-
-	.item-value {
-		opacity: 0.6;
-	}
-
+	.average-line,
 	.baseline {
 		stroke: black;
 	}

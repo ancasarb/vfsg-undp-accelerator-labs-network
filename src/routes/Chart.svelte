@@ -13,7 +13,7 @@
 	export let data;
 
 	const dimensions = {
-		width: 1200,
+		width: 1000,
 		height: 725,
 		margin: {
 			top: 200,
@@ -51,13 +51,14 @@
 			const energySource = energySourceAccessor(item);
 			return {
 				key: energySource,
-				value: projectsAccessor(item),
-				average_value: find(energySourceData, { energy_source: energySource }).projects_avg,
-				// by maturity stage
-				grouped_values: {
-					categories: ['product', 'prototype', 'n/a'],
-					values: [{ product: item.products, prototype: item.prototypes, 'n/a': item.none }]
-				}
+				projects_value: projectsAccessor(item),
+				countries_value: countriesAccessor(item),
+				average_projects_value: find(energySourceData, { energy_source: energySource })
+					.projects_avg,
+				splits: [
+					{ key: 1, value: item.products },
+					{ key: 2, value: item.prototypes }
+				]
 			};
 		});
 
@@ -95,7 +96,9 @@
 		{xScale}
 		{yScale}
 		xAccessor={(item) => item.key}
-		yAccessor={(item) => item.value}
-		yAvgAccessor={(item) => item.average_value}
+		yAccessor={(item) => item.projects_value}
+		yAvgAccessor={(item) => item.average_projects_value}
+		additionalDataAccessor={(item) => item.countries_value}
+		splitsDataAccessor={(item) => item.splits}
 	/>
 </svg>
