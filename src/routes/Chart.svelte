@@ -2,9 +2,9 @@
 	import Rows from './../components/Rows.svelte';
 
 	import { regionMetadata, energySourceMetadata } from './../transform.js';
-	import { getCountsByEnergySource, getCountsByRegion } from '../transform';
-	import { extent, scaleBand, scaleLinear } from 'd3';
-	import { find, max, meanBy, uniq } from 'lodash';
+	import { getCountsByRegion } from '../transform';
+	import { scaleBand, scaleLinear } from 'd3';
+	import { find, max, uniq } from 'lodash';
 
 	import XAxis from './../components/XAxis.svelte';
 	import YAxis from './../components/YAxis.svelte';
@@ -32,7 +32,6 @@
 	const countriesAccessor = (d) => d.countries;
 
 	$: regionData = getCountsByRegion(data);
-	$: energySourceData = getCountsByEnergySource(data);
 
 	$: energySources = uniq(data.map(energySourceAccessor)).sort();
 	$: regions = uniq(regionData.map(regionAccessor)).sort();
@@ -41,11 +40,6 @@
 	$: xScale = scaleBand().domain(energySources).rangeRound([0, dimensions.innerWidth]).padding(0.2);
 	$: yScale = scaleLinear().domain([0, maxProjects]).range([100, 10]);
 
-	$: energySourceData = energySourceData.map((item) => ({
-		...item,
-		projects_avg: meanBy(regionAccessor(item), 'projects')
-	}));
-
 	$: chartRows = regions.map((region) => {
 		const items = energySourceAccessor(find(regionData, { region: region })).map((item) => {
 			const energySource = energySourceAccessor(item);
@@ -53,8 +47,6 @@
 				key: energySource,
 				projects_value: projectsAccessor(item),
 				countries_value: countriesAccessor(item),
-				average_projects_value: find(energySourceData, { energy_source: energySource })
-					.projects_avg,
 				splits: [
 					{ key: 1, value: item.products },
 					{ key: 2, value: item.prototypes }
@@ -97,7 +89,6 @@
 		{yScale}
 		xAccessor={(item) => item.key}
 		yAccessor={(item) => item.projects_value}
-		yAvgAccessor={(item) => item.average_projects_value}
 		additionalDataAccessor={(item) => item.countries_value}
 		splitsDataAccessor={(item) => item.splits}
 	/>

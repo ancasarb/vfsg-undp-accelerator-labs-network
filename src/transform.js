@@ -1,28 +1,5 @@
 import { filter, groupBy, uniqBy } from 'lodash';
 
-export function getCountsByEnergySource(data) {
-	return Object.entries(groupBy(data, 'energy_source')).map((energySourceEntry) => {
-		const [energySource, elementsWithEnergySource] = energySourceEntry;
-
-		const regionData = Object.entries(groupBy(elementsWithEnergySource, 'region')).map(
-			(regionEntry) => {
-				const [region, elementsInRegion] = regionEntry;
-
-				return {
-					region: region,
-					projects: elementsInRegion.length,
-					countries: uniqBy(elementsInRegion, 'mapper').length
-				};
-			}
-		);
-
-		return {
-			energy_source: energySource,
-			region: regionData
-		};
-	});
-}
-
 export function getCountsByRegion(data) {
 	return Object.entries(groupBy(data, 'region')).map((regionEntry) => {
 		const [region, elementsInRegion] = regionEntry;
