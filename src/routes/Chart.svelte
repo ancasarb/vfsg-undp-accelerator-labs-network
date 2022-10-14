@@ -1,8 +1,8 @@
 <script>
 	import Rows from './../components/Rows.svelte';
 
-	import { regionMetadata, energySourceMetadata } from './../transform.js';
-	import { getCountsByRegionAndEnergySource, getTotalProjects } from '../transform';
+	import { color, padding, display } from './../metadata.js';
+	import { getCountsByRegionAndEnergySource, getTotalProjectsByEnergySource } from '../transform';
 	import { scaleBand, scaleLinear } from 'd3';
 	import { find, max, orderBy, uniq } from 'lodash';
 
@@ -34,39 +34,39 @@
 	const countriesAccessor = (d) => d.countries;
 
 	$: regionEnergySourceData = getCountsByRegionAndEnergySource(data);
-	$: totalProjects = getTotalProjects(data);
+	$: totalProjects = getTotalProjectsByEnergySource(data);
 
 	$: energySources = orderBy(totalProjects, 'total_projects', ['desc']).map(energySourceAccessor);
 	$: regions = uniq(regionEnergySourceData.map(regionAccessor)).sort();
-	$: maxProjects = max(regionEnergySourceData.map(energySourceAccessor).flat().map(projectsAccessor));
+	$: maxProjects = max(
+		regionEnergySourceData.map(energySourceAccessor).flat().map(projectsAccessor)
+	);
 
 	$: xScale = scaleBand().domain(energySources).rangeRound([0, dimensions.innerWidth]).padding(0.5);
 	$: yScale = scaleLinear().domain([0, maxProjects]).range([100, 10]);
 
 	$: chartRows = regions.map((region) => {
-		const items = energySourceAccessor(find(regionEnergySourceData, { region: region })).map((item) => {
-			const energySource = energySourceAccessor(item);
-			return {
-				key: energySource,
-				projects_value: projectsAccessor(item),
-				countries_value: countriesAccessor(item),
-				splits: [
-					{ key: 1, value: item.products },
-					{ key: 2, value: item.prototypes }
-				]
-			};
-		});
+		const items = energySourceAccessor(find(regionEnergySourceData, { region: region })).map(
+			(item) => {
+				const energySource = energySourceAccessor(item);
+				return {
+					key: energySource,
+					projects_value: projectsAccessor(item),
+					countries_value: countriesAccessor(item),
+					groups: [item.products, item.prototypes]
+				};
+			}
+		);
 
 		return {
-			rowKey: region,
-			rowColor: find(regionMetadata, { region: region }).color,
+			color: color[region],
 			items: items
 		};
 	});
 </script>
 
 <svg width={dimensions.width} height={dimensions.height}>
-	<Title chartDimensions={dimensions}/>
+	<Title chartDimensions={dimensions} />
 
 	<XAxis
 		chartDimensions={dimensions}
@@ -74,18 +74,14 @@
 			return {
 				label: e,
 				xPosition: xScale(e),
-				padding: find(energySourceMetadata, { energySource: e }).padding
+				padding: padding[e]
 			};
 		})}
 	/>
 
 	<Gridlines chartDimensions={dimensions} xPositions={energySources.map(xScale)} />
 
-	<YAxis
-		chartDimensions={dimensions}
-		labels={regions.map((r) => find(regionMetadata, { region: r }).display)}
-		rowYScale={yScale}
-	/>
+	<YAxis chartDimensions={dimensions} labels={regions.map((r) => display[r])} rowYScale={yScale} />
 	<Rows
 		chartDimensions={dimensions}
 		{chartRows}
@@ -94,8 +90,8 @@
 		xAccessor={(item) => item.key}
 		yAccessor={(item) => item.projects_value}
 		additionalDataAccessor={(item) => item.countries_value}
-		splitsDataAccessor={(item) => item.splits}
+		groupDataAccessor={(item) => item.groups}
 	/>
 
-	<Legend chartDimensions={dimensions}/>
+	<Legend chartDimensions={dimensions} />
 </svg>

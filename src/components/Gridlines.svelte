@@ -1,6 +1,6 @@
 <script>
 	export let chartDimensions;
-	
+
 	export let xPositions;
 </script>
 

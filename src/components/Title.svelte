@@ -2,7 +2,9 @@
 	export let chartDimensions;
 </script>
 
-<text x={chartDimensions.margin.left + chartDimensions.innerWidth / 2} y={chartDimensions.height - 4}
+<text
+	x={chartDimensions.margin.left + chartDimensions.innerWidth / 2}
+	y={chartDimensions.height - 4}
 	>Project distribution across countries, regions, and energy sources</text
 >
 

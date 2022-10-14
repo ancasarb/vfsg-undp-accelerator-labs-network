@@ -46,7 +46,7 @@
 	{#each labels as label, i}
 		<g transform={`translate(0, ${chartDimensions.margin.top + chartDimensions.rowHeight * i})`}>
 			{#each label as d, j}
-				{#if i === 3}
+				{#if label.length >= 5}
 					<text
 						class="y-axis-text"
 						x={chartDimensions.margin.left - 100}

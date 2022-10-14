@@ -1,7 +1,7 @@
 <script>
-	import { find } from 'lodash';
 	import textures from 'textures';
 	import { select } from 'd3';
+	import { getTexture } from '../metadata';
 
 	export let chartRows;
 	export let chartDimensions;
@@ -12,23 +12,23 @@
 	export let xAccessor;
 	export let yAccessor;
 	export let additionalDataAccessor;
-	export let splitsDataAccessor;
+	export let groupDataAccessor;
 
 	const barWidth = 20;
 	const additionalDataLineHeight = 3;
 	const additionalDataLineLeftMargin = 1.5;
 
-	const splitsTextures = [
-		textures.lines().orientation('6/8').stroke('#02aad1').lighter().lighter().thicker().thicker(),
-		textures.lines().orientation('6/8').stroke('#8e4784').lighter().lighter().thicker().thicker(),
-		textures.lines().orientation('6/8').stroke('#f59421').lighter().lighter().thicker().thicker(),
-		textures.lines().orientation('6/8').stroke('#e00102').lighter().lighter().thicker().thicker(),
-		textures.lines().orientation('6/8').stroke('#36978e').lighter().lighter().thicker().thicker()
+	const groupsTextures = [
+		getTexture('#02aad1'),
+		getTexture('#8e4784'),
+		getTexture('#f59421'),
+		getTexture('#e00102'),
+		getTexture('#36978e')
 	];
 
 	let group;
 	$: {
-		splitsTextures.map((t) => select(group).call(t));
+		groupsTextures.map((t) => select(group).call(t));
 	}
 </script>
 
@@ -42,36 +42,34 @@
 			{#each row.items as item}
 				{@const x = xScale(xAccessor(item))}
 				{@const y = yScale(yAccessor(item))}
-				{@const ySplit1 = yScale(find(splitsDataAccessor(item), { key: 1 }).value)}
-				{@const ySplit2 = yScale(find(splitsDataAccessor(item), { key: 2 }).value)}
+				{@const groups = [
+					{
+						x: x - barWidth / 2 - barWidth / 2 - 2,
+						y: yScale(groupDataAccessor(item)[0]),
+						fill: groupsTextures[i].url()
+					},
+					{ x: x + barWidth / 2 + 2, y: yScale(groupDataAccessor(item)[1]), fill: 'white' }
+				]}
 
 				<rect
 					x={x - barWidth / 2}
 					{y}
 					width={barWidth}
 					height={chartDimensions.rowHeight - y}
-					fill={row.rowColor}
+					fill={row.color}
 				/>
 
-				<rect
-					x={x - barWidth / 2 - barWidth / 2 - 2}
-					y={ySplit1}
-					width={barWidth / 2}
-					height={chartDimensions.rowHeight - ySplit1}
-					stroke={row.rowColor}
-					fill={splitsTextures[i].url()}
-					stroke-width={0.5}
-				/>
-
-				<rect
-					x={x + barWidth / 2 + 2}
-					y={ySplit2}
-					width={barWidth / 2}
-					height={chartDimensions.rowHeight - ySplit2}
-					stroke={row.rowColor}
-					fill="white"
-					stroke-width={0.5}
-				/>
+				{#each groups as group}
+					<rect
+						x={group.x}
+						y={group.y}
+						width={barWidth / 2}
+						height={chartDimensions.rowHeight - group.y}
+						stroke={row.color}
+						fill={group.fill}
+						stroke-width={0.5}
+					/>
+				{/each}
 
 				{#each [...Array(additionalDataAccessor(item)).keys()] as index}
 					{@const additionalDataX =

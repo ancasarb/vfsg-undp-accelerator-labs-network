@@ -1,18 +1,26 @@
 <script>
 	export let chartDimensions;
-	
+
 	export let labels;
+
+	const xAxisRowWidth = 10;
 </script>
 
 <g transform={`translate(${chartDimensions.margin.left})`}>
 	{#each labels as l}
 		{@const x = l.xPosition}
-		<line x1={x} y1={10} x2={x} y2={chartDimensions.margin.top - 10} class="x-axis-line" />
+		<line
+			x1={x}
+			y1={xAxisRowWidth}
+			x2={x}
+			y2={chartDimensions.margin.top - 10}
+			class="x-axis-line"
+		/>
 		<rect
 			x={-chartDimensions.margin.top + 20}
-			y={x - 5}
+			y={x - xAxisRowWidth / 2}
 			width={l.padding}
-			height={10}
+			height={xAxisRowWidth}
 			transform={`rotate(-90)`}
 			class="x-axis-background"
 		/>
