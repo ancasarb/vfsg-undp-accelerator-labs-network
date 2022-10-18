@@ -1,4 +1,4 @@
-import { filter, groupBy, uniqBy } from 'lodash';
+import { filter, groupBy, orderBy, uniqBy } from 'lodash';
 
 export function getCountsByRegionAndEnergySource(data) {
 	return Object.entries(groupBy(data, 'region')).map((regionEntry) => {
@@ -29,8 +29,8 @@ export function getCountsByRegionAndEnergySource(data) {
 	});
 }
 
-export function getTotalProjectsByEnergySource(data) {
-	return Object.entries(groupBy(data, 'energy_source')).map((energySourceEntry) => {
+export function getEnergySourcesSortedByTotalProjects(data) {
+	let totalProjectsByEnergySource = Object.entries(groupBy(data, 'energy_source')).map((energySourceEntry) => {
 		const [energySource, elementsWithEnergySource] = energySourceEntry;
 
 		return {
@@ -38,4 +38,6 @@ export function getTotalProjectsByEnergySource(data) {
 			total_projects: elementsWithEnergySource.length
 		};
 	});
+
+	return orderBy(totalProjectsByEnergySource, 'total_projects', ['desc']).map((d) => d['energy_source']);
 }

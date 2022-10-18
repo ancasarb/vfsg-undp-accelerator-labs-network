@@ -2,9 +2,9 @@
 	import Rows from './../components/Rows.svelte';
 
 	import { color, padding, display } from './../metadata.js';
-	import { getCountsByRegionAndEnergySource, getTotalProjectsByEnergySource } from '../transform';
+	import { getCountsByRegionAndEnergySource, getEnergySourcesSortedByTotalProjects } from '../transform';
 	import { scaleBand, scaleLinear } from 'd3';
-	import { find, max, orderBy, uniq } from 'lodash';
+	import { find, max, uniq } from 'lodash';
 
 	import XAxis from './../components/XAxis.svelte';
 	import YAxis from './../components/YAxis.svelte';
@@ -34,9 +34,8 @@
 	const countriesAccessor = (d) => d.countries;
 
 	$: regionEnergySourceData = getCountsByRegionAndEnergySource(data);
-	$: totalProjects = getTotalProjectsByEnergySource(data);
 
-	$: energySources = orderBy(totalProjects, 'total_projects', ['desc']).map(energySourceAccessor);
+	$: energySources = getEnergySourcesSortedByTotalProjects(data);
 	$: regions = uniq(regionEnergySourceData.map(regionAccessor)).sort();
 	$: maxProjects = max(
 		regionEnergySourceData.map(energySourceAccessor).flat().map(projectsAccessor)
