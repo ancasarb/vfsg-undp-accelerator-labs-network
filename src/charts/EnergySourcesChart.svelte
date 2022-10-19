@@ -1,16 +1,19 @@
 <script>
-	import Rows from './../components/Rows.svelte';
 
-	import { color, padding, display } from './../metadata.js';
-	import { getCountsByRegionAndEnergySource, getEnergySourcesSortedByTotalProjects } from '../transform';
+	import { color, energySourcesPadding, display } from '../metadata.js';
+	import {
+		getCountsByRegionAndEnergySource,
+		getEnergySourcesSortedByTotalProjects
+	} from '../transform';
 	import { scaleBand, scaleLinear } from 'd3';
 	import { find, max, uniq } from 'lodash';
 
-	import XAxis from './../components/XAxis.svelte';
-	import YAxis from './../components/YAxis.svelte';
-	import Gridlines from './../components/Gridlines.svelte';
+	import XAxis from '../components/XAxis.svelte';
+	import YAxis from '../components/YAxis.svelte';
+	import Gridlines from '../components/Gridlines.svelte';
 	import Legend from '../components/Legend.svelte';
 	import Title from '../components/Title.svelte';
+	import Rows from '../components/Rows.svelte';
 
 	export let data;
 
@@ -42,7 +45,7 @@
 	);
 
 	$: xScale = scaleBand().domain(energySources).rangeRound([0, dimensions.innerWidth]).padding(0.5);
-	$: yScale = scaleLinear().domain([0, maxProjects]).range([100, 10]);
+	$: yScale = scaleLinear().domain([0, maxProjects]).range([dimensions.rowHeight, 10]);
 
 	$: chartRows = regions.map((region) => {
 		const items = energySourceAccessor(find(regionEnergySourceData, { region: region })).map(
@@ -65,7 +68,10 @@
 </script>
 
 <svg width={dimensions.width} height={dimensions.height}>
-	<Title chartDimensions={dimensions} />
+	<Title
+		chartDimensions={dimensions}
+		title="Project distribution across countries, regions, and energy sources"
+	/>
 
 	<XAxis
 		chartDimensions={dimensions}
@@ -73,14 +79,14 @@
 			return {
 				label: e,
 				xPosition: xScale(e),
-				padding: padding[e]
+				padding: energySourcesPadding[e]
 			};
 		})}
 	/>
 
 	<Gridlines chartDimensions={dimensions} xPositions={energySources.map(xScale)} />
 
-	<YAxis chartDimensions={dimensions} labels={regions.map((r) => display[r])} rowYScale={yScale} />
+	<YAxis chartDimensions={dimensions} labels={regions.map((r) => display[r])} rowYScale={yScale} ticks={[0, 10, 20, 30, 40]}/>
 	<Rows
 		chartDimensions={dimensions}
 		{chartRows}

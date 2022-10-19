@@ -4,10 +4,12 @@
 	export let chartDimensions;
 
 	export let rowYScale;
+
+	export let ticks;
 	export let labels;
 
 	const chartAxis = function (axis) {
-		let axisGenerator = axisLeft().scale(rowYScale).tickValues([0, 10, 20, 30, 40]);
+		let axisGenerator = axisLeft().scale(rowYScale).tickValues(ticks);
 		select(axis).call(axisGenerator);
 		select(axis).select('.domain').attr('stroke-width', 0);
 		select(axis).selectAll('.tick').select('line').attr('stroke-width', 0);
