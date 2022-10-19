@@ -11,7 +11,7 @@
 	import Gridlines from '../components/Gridlines.svelte';
 	import Legend from '../components/Legend.svelte';
 	import Title from '../components/Title.svelte';
-    import Rows from '../components/Rows.svelte';
+	import Rows from '../components/Rows.svelte';
 
 	import { color, display } from '../metadata.js';
 
@@ -19,7 +19,7 @@
 
 	const dimensions = {
 		width: 1520,
-		height: 975,
+		height: 1050,
 		margin: {
 			top: 350,
 			left: 180,
@@ -37,7 +37,6 @@
 	const countriesAccessor = (d) => d.countries;
 
 	$: regionSDGData = getCountsByRegionAndSDG(data);
-
 
 	$: regions = uniq(regionSDGData.map(regionAccessor)).sort();
 	$: maxProjects = max(regionSDGData.map(sdgAccessor).flat().map(projectsAccessor));
@@ -63,44 +62,45 @@
 			items: items
 		};
 	});
-
 </script>
 
 <svg width={dimensions.width} height={dimensions.height}>
 	<Title
 		chartDimensions={dimensions}
-		title="Project distribution across countries, regions, and sustainable development goals"
+		title="PROJECT DISTRIBUTION ACROSS COUNTRIES, REGIONS, AND SUSTAINABLE DEVELOPMENT GOALS"
 	/>
 
-	<XAxis
-		chartDimensions={dimensions}
-		labels={xScaleDomain.map((e) => {
-			return {
-				label: find(sdgs, { sdg: e }).name + " (SDG " + e + ")",
-				xPosition: xScale(e),
-				padding: sdgsPadding[find(sdgs, { sdg: e }).name]
-			};
-		})}
-	/>
-	<Gridlines chartDimensions={dimensions} xPositions={xScaleDomain.map(xScale)} />
+	<g transform={`translate(0, 70)`}>
+		<XAxis
+			chartDimensions={dimensions}
+			labels={xScaleDomain.map((e) => {
+				return {
+					label: find(sdgs, { sdg: e }).name + ' (SDG ' + e + ')',
+					xPosition: xScale(e),
+					padding: sdgsPadding[find(sdgs, { sdg: e }).name]
+				};
+			})}
+		/>
+		<Gridlines chartDimensions={dimensions} xPositions={xScaleDomain.map(xScale)} />
 
-	<YAxis
-		chartDimensions={dimensions}
-		labels={regions.map((r) => display[r])}
-		rowYScale={yScale}
-		ticks={[0, 15, 30, 45, 60, 75, 90]}
-	/>
+		<YAxis
+			chartDimensions={dimensions}
+			labels={regions.map((r) => display[r])}
+			rowYScale={yScale}
+			ticks={[0, 15, 30, 45, 60, 75, 90]}
+		/>
 
-	<Rows
-		chartDimensions={dimensions}
-		{chartRows}
-		{xScale}
-		{yScale}
-		xAccessor={(item) => item.key}
-		yAccessor={(item) => item.projects_value}
-		additionalDataAccessor={(item) => item.countries_value}
-		groupDataAccessor={(item) => item.groups}
-	/>
+		<Rows
+			chartDimensions={dimensions}
+			{chartRows}
+			{xScale}
+			{yScale}
+			xAccessor={(item) => item.key}
+			yAccessor={(item) => item.projects_value}
+			additionalDataAccessor={(item) => item.countries_value}
+			groupDataAccessor={(item) => item.groups}
+		/>
 
-    <Legend chartDimensions={dimensions} x={dimensions.width - dimensions.margin.right} />
+		<Legend chartDimensions={dimensions} x={dimensions.width - dimensions.margin.right} y={dimensions.margin.top - 20} />
+	</g>
 </svg>

@@ -5,7 +5,7 @@
 
 <text
 	x={chartDimensions.margin.left + chartDimensions.innerWidth / 2}
-	y={chartDimensions.height - 4}
+	y={40}
 	>{title}</text
 >
 

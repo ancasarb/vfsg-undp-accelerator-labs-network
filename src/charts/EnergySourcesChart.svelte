@@ -1,5 +1,4 @@
 <script>
-
 	import { color, energySourcesPadding, display } from '../metadata.js';
 	import {
 		getCountsByRegionAndEnergySource,
@@ -19,7 +18,7 @@
 
 	const dimensions = {
 		width: 1300,
-		height: 725,
+		height: 800,
 		margin: {
 			top: 195,
 			left: 250,
@@ -70,33 +69,40 @@
 <svg width={dimensions.width} height={dimensions.height}>
 	<Title
 		chartDimensions={dimensions}
-		title="Project distribution across countries, regions, and energy sources"
+		title="PROJECT DISTRIBUTION ACROSS COUNTRIES, REGIONS, AND ENERGY SOURCES"
 	/>
 
-	<XAxis
-		chartDimensions={dimensions}
-		labels={energySources.map((e) => {
-			return {
-				label: e,
-				xPosition: xScale(e),
-				padding: energySourcesPadding[e]
-			};
-		})}
-	/>
+	<g transform={`translate(0, 70)`}>
+		<XAxis
+			chartDimensions={dimensions}
+			labels={energySources.map((e) => {
+				return {
+					label: e,
+					xPosition: xScale(e),
+					padding: energySourcesPadding[e]
+				};
+			})}
+		/>
 
-	<Gridlines chartDimensions={dimensions} xPositions={energySources.map(xScale)} />
+		<Gridlines chartDimensions={dimensions} xPositions={energySources.map(xScale)} />
 
-	<YAxis chartDimensions={dimensions} labels={regions.map((r) => display[r])} rowYScale={yScale} ticks={[0, 10, 20, 30, 40]}/>
-	<Rows
-		chartDimensions={dimensions}
-		{chartRows}
-		{xScale}
-		{yScale}
-		xAccessor={(item) => item.key}
-		yAccessor={(item) => item.projects_value}
-		additionalDataAccessor={(item) => item.countries_value}
-		groupDataAccessor={(item) => item.groups}
-	/>
+		<YAxis
+			chartDimensions={dimensions}
+			labels={regions.map((r) => display[r])}
+			rowYScale={yScale}
+			ticks={[0, 10, 20, 30, 40]}
+		/>
+		<Rows
+			chartDimensions={dimensions}
+			{chartRows}
+			{xScale}
+			{yScale}
+			xAccessor={(item) => item.key}
+			yAccessor={(item) => item.projects_value}
+			additionalDataAccessor={(item) => item.countries_value}
+			groupDataAccessor={(item) => item.groups}
+		/>
 
-	<Legend chartDimensions={dimensions} />
+		<Legend chartDimensions={dimensions} />
+	</g>
 </svg>

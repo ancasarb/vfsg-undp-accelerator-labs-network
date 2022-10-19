@@ -4,8 +4,8 @@
 
 	export let chartDimensions;
 	export let x = chartDimensions.width - 100 - chartDimensions.margin.right / 2;
-	export let y = chartDimensions.margin.top;
-	
+	export let y = chartDimensions.margin.top + 100;
+
 	const padding = 15;
 
 	const color = '#5A5A5A';
