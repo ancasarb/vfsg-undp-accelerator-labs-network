@@ -19,9 +19,9 @@
 
 	const dimensions = {
 		width: 1520,
-		height: 925,
+		height: 975,
 		margin: {
-			top: 300,
+			top: 350,
 			left: 180,
 			bottom: 25,
 			right: 300
@@ -76,7 +76,7 @@
 		chartDimensions={dimensions}
 		labels={xScaleDomain.map((e) => {
 			return {
-				label: find(sdgs, { sdg: e }).name,
+				label: find(sdgs, { sdg: e }).name + " (SDG " + e + ")",
 				xPosition: xScale(e),
 				padding: sdgsPadding[find(sdgs, { sdg: e }).name]
 			};

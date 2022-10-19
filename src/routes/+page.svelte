@@ -1,16 +1,18 @@
 <script>
 	import load from '../routes/api/api';
-	import EnergySourcesChart from '../charts/EnergySourcesChart.svelte';
-	import SustainableDevelopmentGoalsChart from '../charts/SustainableDevelopmentGoalsChart.svelte';
+	import Linkable from '../components/Linkable.svelte';
 </script>
 
 <main>
-	{#await load('/api/undp')}
-		<p>loading</p>
-	{:then data}
-		<EnergySourcesChart {data} />
-		<SustainableDevelopmentGoalsChart {data} />
-	{/await}
+	<Linkable link="/energysources"
+		><h1>Project distribution across countries, regions, and energy sources</h1></Linkable
+	>
+
+	<Linkable link="/sdgs"
+		><h1>
+			Project distribution across countries, regions, and sustainable development goals
+		</h1></Linkable
+	>
 </main>
 
 <style>

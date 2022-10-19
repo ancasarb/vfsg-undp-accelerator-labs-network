@@ -23,23 +23,23 @@ export const energySourcesPadding = {
 };
 
 export const sdgsPadding = {
-	'No poverty': 90,
-	'Zero hunger': 95,
-	'Good health and well-being': 185,
-	'Quality education': 125,
-	'Gender equality': 115,
-	'Clean water and sanitation': 175,
-	'Affordable and clean energy': 185,
-	'Decent work and economic growth': 220,
-	'Industry, innovation and infrastructure': 240,
-	'Reduced inequalities': 140,
-	'Sustainable cities and communities': 225,
-	'Responsible consumption and production': 260,
-	'Climate action': 105,
-	'Life below water': 120,
-	'Life on land': 90,
-	'Peace, justice and strong institutions': 235,
-	'Partnerships for the goals': 175
+	'No poverty': 135,
+	'Zero hunger': 140,
+	'Good health and well-being': 230,
+	'Quality education': 175,
+	'Gender equality': 165,
+	'Clean water and sanitation': 225,
+	'Affordable and clean energy': 235,
+	'Decent work and economic growth': 270,
+	'Industry, innovation and infrastructure': 290,
+	'Reduced inequalities': 195,
+	'Sustainable cities and communities': 275,
+	'Responsible consumption and production': 310,
+	'Climate action': 160,
+	'Life below water': 170,
+	'Life on land': 145,
+	'Peace, justice and strong institutions': 285,
+	'Partnerships for the goals': 225
 };
 
 export const display = {
