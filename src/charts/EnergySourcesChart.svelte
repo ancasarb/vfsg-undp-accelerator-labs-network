@@ -103,6 +103,13 @@
 			groupDataAccessor={(item) => item.groups}
 		/>
 
-		<Legend chartDimensions={dimensions} />
+		<Legend
+			chartDimensions={dimensions}
+			notes={[
+				'The energy sources are positioned',
+				'according to the total number of projects',
+				'across all regions.'
+			]}
+		/>
 	</g>
 </svg>

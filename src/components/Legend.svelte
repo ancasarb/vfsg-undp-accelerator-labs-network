@@ -6,6 +6,8 @@
 	export let x = chartDimensions.width - 100 - chartDimensions.margin.right / 2;
 	export let y = chartDimensions.margin.top + 100;
 
+	export let notes;
+
 	const padding = 15;
 
 	const color = '#5A5A5A';
@@ -19,7 +21,7 @@
 
 <g bind:this={group}>
 	<text class="title" {x} {y}>How to read it?</text>
-	{#each ['The energy sources are positioned', 'according to the total number of projects', 'across all regions.'] as note, i}
+	{#each notes as note, i}
 		<text class="note" {x} y={y + padding * (i + 2)}>{note}</text>
 	{/each}
 

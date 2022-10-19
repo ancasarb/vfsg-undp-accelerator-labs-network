@@ -101,6 +101,15 @@
 			groupDataAccessor={(item) => item.groups}
 		/>
 
-		<Legend chartDimensions={dimensions} x={dimensions.width - dimensions.margin.right} y={dimensions.margin.top - 20} />
+		<Legend
+			chartDimensions={dimensions}
+			x={dimensions.width - dimensions.margin.right}
+			y={dimensions.margin.top - 20}
+			notes={[
+				'The sustainable development goals are',
+				'positioned according to the total number',
+				'of projects across all regions.'
+			]}
+		/>
 	</g>
 </svg>
