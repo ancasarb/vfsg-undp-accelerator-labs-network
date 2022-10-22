@@ -13,6 +13,8 @@
 			View project distribution across countries, regions, and sustainable development goals
 		</h1></Linkable
 	>
+
+	<img src="/vfsg.png" alt="vis for social good logo" />
 </main>
 
 <style>
