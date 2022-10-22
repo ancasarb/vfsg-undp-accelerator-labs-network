@@ -5,12 +5,12 @@
 
 <main>
 	<Linkable link="/energysources" color="Linen"
-		><h1>View project distribution across countries, regions, and energy sources</h1></Linkable
+		><h1>View project distribution across regions, countries, and energy sources</h1></Linkable
 	>
 
 	<Linkable link="/sdgs" color="WhiteSmoke"
 		><h1>
-			View project distribution across countries, regions, and sustainable development goals
+			View project distribution across regions, countries and sustainable development goals
 		</h1></Linkable
 	>
 
