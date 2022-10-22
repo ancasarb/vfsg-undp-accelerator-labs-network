@@ -69,7 +69,7 @@
 <svg width={dimensions.width} height={dimensions.height}>
 	<Title
 		chartDimensions={dimensions}
-		title="PROJECT DISTRIBUTION ACROSS COUNTRIES, REGIONS, AND ENERGY SOURCES"
+		title="PROJECT DISTRIBUTION ACROSS REGIONS, COUNTRIES AND ENERGY SOURCES"
 	/>
 
 	<g transform={`translate(0, 70)`}>
