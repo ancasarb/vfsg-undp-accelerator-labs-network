@@ -75,7 +75,7 @@
 			chartDimensions={dimensions}
 			labels={xScaleDomain.map((e) => {
 				return {
-					label: find(sdgs, { sdg: e }).name + ' (SDG ' + e + ')',
+					label: 'SDG ' + e + ': ' + find(sdgs, { sdg: e }).name,
 					xPosition: xScale(e),
 					padding: sdgsPadding[find(sdgs, { sdg: e }).name]
 				};
