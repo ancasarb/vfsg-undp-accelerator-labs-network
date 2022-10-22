@@ -5,7 +5,7 @@
 
 <main>
 	<Linkable link="/energysources" color="Linen"
-		><h1>View project distribution across regions, countries, and energy sources</h1></Linkable
+		><h1>View project distribution across regions, countries and energy sources</h1></Linkable
 	>
 
 	<Linkable link="/sdgs" color="WhiteSmoke"
